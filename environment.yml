@@ -8,3 +8,5 @@ dependencies:
 - plotly
 - scikit-learn
 - statsmodels
+- flake8
+- tinytec
