@@ -9,3 +9,4 @@ dependencies:
 - scikit-learn
 - statsmodels
 - flake8
+- tinytex
