@@ -1,7 +1,7 @@
 ---
-title: "Proposal: [Your project name]"
+title: "Proposal: Funny Project LOL"
 subtitle: "DATA 450 Capstone"
-author: "[Your Name]"
+author: "Thomas Ortega"
 date: today
 bibliography: references.bib
 number-sections: true
@@ -11,8 +11,8 @@ jupyter: python3
 ---
 
 # Introduction
- HELLO
 [This section should contain background and introduction to your general topic.]
+The source of this data stems from the LendingClub financial services company, where users had the ability to download accepted and rejected applicant data regarding loans. Since 2020, LendingClub no longer supports this functionality. A Kaggle dataset created by the user Nathan George, downloaded/scraped the data while it was available. The applications span from the years 2007-2018.
 
 # Dataset
 
