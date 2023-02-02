@@ -8,3 +8,10 @@ Setup - Downloaded both accepted and rejected loan applications. Used 7-Zip to e
 
 Data Dictionary:
 https://www.kaggle.com/datasets/jonchan2003/lending-club-data-dictionary?select=Lending+Club+Data+Dictionary+Approved.csv
+
+Resources:
+zip-codes
+https://www.unitedstateszipcodes.org/
+
+site the data comes from
+https://www.lendingclub.com/investing/peer-to-peer
