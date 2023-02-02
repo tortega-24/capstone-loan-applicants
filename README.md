@@ -18,3 +18,6 @@ https://www.lendingclub.com/investing/peer-to-peer
 
 good credit score (vantage and fico)
 https://www.experian.com/blogs/ask-experian/credit-education/score-basics/what-is-a-good-credit-score/
+
+harship plan 
+https://www.creditkarma.com/credit-cards/i/how-hardship-plan-can-affect-credit#:~:text=A%20hardship%20plan%2C%20also%20known,right%20for%20your%20financial%20situation%3F
