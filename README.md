@@ -15,3 +15,6 @@ https://www.unitedstateszipcodes.org/
 
 site the data comes from
 https://www.lendingclub.com/investing/peer-to-peer
+
+good credit score (vantage and fico)
+https://www.experian.com/blogs/ask-experian/credit-education/score-basics/what-is-a-good-credit-score/
