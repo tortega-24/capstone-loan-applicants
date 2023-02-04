@@ -1,5 +1,5 @@
 ---
-title: "Proposal: Funny Project LOL"
+title: "Qualifying for a Loan"
 subtitle: "DATA 450 Capstone"
 author: "Thomas Ortega"
 date: today
@@ -26,7 +26,7 @@ variables that you plan to use in your analysis, for example:
 * age: The patient's age (months)
 
 ]
-The data being used stems from a Kaggle dataset using real data from a company called LendingClub.  
+The data comes from a Kaggle dataset  @nath19. 
 
 # Data Acquisition and Processing
 
@@ -35,6 +35,7 @@ anything more complicated than a simple download). Discuss what data
 processing steps will be needed, such as recoding variables, data cleaning,
 data tidying, imputing missing values, etc. See sections 1c, 1d, 1e in the 
 "Good Enough Practices" paper.]
+
 
 # Research Questions and Methodology
 
