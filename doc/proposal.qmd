@@ -11,16 +11,14 @@ jupyter: python3
 ---
 
 # Introduction
-[This section should contain background and introduction to your general topic.]
-The source of this data stems from the LendingClub financial services company, where users had the ability to download accepted and rejected applicant data regarding loans. Since 2020, LendingClub no longer supports this functionality. A Kaggle dataset created by the user Nathan George, downloaded/scraped the data while it was available. The applications span from the years 2007-2018.
+[This section should contain background and introduction to your general topic.] Loans are a fundamental aspect of not only the United States' economy but economies world wide. Loans provide funding to people lacking the current resources to consolidate debt, buy a house, buy a car, open a business, and any transaction that requires money. To make a profit, loans are expected to be paid back with interest. Companies want to know which applicants that apply for a loan will pay it back. Selecting a string of clients that default would spell disaster for the loaner. With teams of analysts, they build models to identify candidates. People on the outside of these lending companies want to know what traits make a candidate more or less likely to receive a loan. Using a dataset containing variables describing candidates that are accepted or rejected, the project will dig into the data to find insights and build visuals describing the population of both accepted and rejected applicants. Also, the project entails building a model that uses the features inherent in the dataset to predict whether a customer is accepted or rejected. The data belongs to a bank called LendingClub. LendingClub is an FDIC-insured bank that provides various loans.
 
 # Dataset
 
 [In this section, desribe the dataset(s). This includes things like where you
 obtained the dataset. Include a full citation, as specified 
 [here](https://guides.lib.umich.edu/c.php?g=282964&p=3285995). Describe how the
-data was obtained by the data owner/curator, as best as you can.
-[test](https://www.kaggle.com/datasets/wordsforthewise/lending-club?select=accepted_2007_to_2018Q4.csv.gz). List the 
+data was obtained by the data owner/curator, as best as you can. List the 
 variables that you plan to use in your analysis, for example:
 
 * weight: The patient's weight (kg)
@@ -28,6 +26,7 @@ variables that you plan to use in your analysis, for example:
 * age: The patient's age (months)
 
 ]
+The data being used stems from a Kaggle dataset using real data from a company called LendingClub.  
 
 # Data Acquisition and Processing
 
@@ -120,34 +119,6 @@ results.]
 **Final Exam Week (5/8):** *Final Presentations during final exam slot,
 Monday May 9th 3:20-6:40pm.* [Do not schedule any other tasks for this week.]
 
-## Some cool Quarto stuff
-
-[You can delete this section from your proposal.]
-
-For your reference, here's an example of a Python code cell in Quarto,
-along with a figure that gets generated, along with a caption and a label
-so that it can be referred to automatically as "Figure 1" (or whatever)
-in the writeup.
-
-For a demonstration of a line plot on a polar axis, see @fig-polar.
-
-```{python}
-#| label: fig-polar
-#| fig-cap: "A line plot on a polar axis"
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(
-  subplot_kw = {'projection': 'polar'} 
-)
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
 
 Here's an example of citing a source [see @phil99, pp. 33-35]. Be sure the source information is entered in "BibTeX" form in the `references.bib` file.
 
