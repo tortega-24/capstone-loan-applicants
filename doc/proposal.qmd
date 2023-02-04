@@ -19,7 +19,8 @@ The source of this data stems from the LendingClub financial services company, w
 [In this section, desribe the dataset(s). This includes things like where you
 obtained the dataset. Include a full citation, as specified 
 [here](https://guides.lib.umich.edu/c.php?g=282964&p=3285995). Describe how the
-data was obtained by the data owner/curator, as best as you can. List the 
+data was obtained by the data owner/curator, as best as you can.
+[test](https://www.kaggle.com/datasets/wordsforthewise/lending-club?select=accepted_2007_to_2018Q4.csv.gz). List the 
 variables that you plan to use in your analysis, for example:
 
 * weight: The patient's weight (kg)
