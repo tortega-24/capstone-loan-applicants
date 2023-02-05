@@ -41,19 +41,19 @@ The data comes from a Kaggle dataset split into two separate csv files: one for 
 
 **Each step will have documentation to explain the methods used and why it was chosen.**
 
-#### Uploading the Data to GitHub
+## Uploading the Data to GitHub
 
 The data will be downloaded from the Kaggle dataset and extracted using 7-Zip. The data is too large and too uneven to analyze, so there will be a random selection of one hundred thousand rows from each file to be used for analysis. The data will upload in portions to GitHub to comply with GitHub's file size constraints. 
 
-#### Trimming and Cleaning the Data
+## Trimming and Cleaning the Data
 
 Both files will be inspected for missing values. Columns will be dropped with over thirty percent missing values. After trimming the columns down, columns in the rejected table will be matched with corresponding columns in the accepted table and placed into a separate data frame. Matching columns will have their names replaced with a single name to identify the match. Columns that have unclear names will be edited. 
 
-#### Imputing and Cleaning
+## Imputing and Cleaning
 
 Missing values in the data will be imputed based on probability, mean, median, or mode techniques. Before each column is imputed, the data type of that column will be checked and changed if it does not appropriately match the observations. All columns appear to be tidy, so there is no need to alter column values besides for imputation. 
 
-#### Using the Data
+## Using the Data
 
 The processed data will be used in three separate ways. The first path takes only the accepted applicant information and looks to create visualizations about those observations. The second uses accepted and rejected candidates to determine differences between the two classifications. Visualizations will be made to compare rejected and accepted applicants. The third procedure will take the combined data frame and build a supervised machine-learning model. The model will attempt to predict the acceptance or rejection of a candidate. The modeling will be done with an 80-20 split of training and testing data.
 
