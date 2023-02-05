@@ -51,6 +51,7 @@ The data comes from a Kaggle dataset @geor19 and it is split into two separate c
 * Application Type: Indicates whether the loan is an individual application or a joint application with two co-borrowers.
 * Issue Date: The month the loan was funded.
 * Last Payment Date: Last month payment was received.
+* Policy Code: Publicly available policy_code=1 new products not publicly available policy_code=2
 
 # Data Acquisition and Processing
 
@@ -59,6 +60,8 @@ anything more complicated than a simple download). Discuss what data
 processing steps will be needed, such as recoding variables, data cleaning,
 data tidying, imputing missing values, etc. See sections 1c, 1d, 1e in the 
 "Good Enough Practices" paper.]
+
+The data will be downloaded from the Kaggle dataset and extracted using 7-Zip. The data is too large and too uneven to analyze, so there will be a random selection of one hundred thousand rows from each file to be used for analysis. The cleaning portion will be split into multiple sections. The first step in the cleaning is identifying which variables correspond to both rejected and accepted files. Columns with a significant percentage of null values will be dropped from their dataset. The next step is matching the variables corresponding to both rejected and accepted tables. When a match is found, both variables will be renamed to have the same name. Then, any other column names that appear vague will be renamed. Next, the data will be checked to determine if each column is the right data type. After, we will use different imputation techniques to fill in missing values based on the data type. Each step will have its own documentation to explain the methods used and why it was chosen. All columns appear to be tidy, so there is no need to alter column values besides for imputation. Once the data looks clean, it will be used for two aspects of the project. The first aspect considers analysis of only accepted customer data, and a copy of the cleaned accepted data will be made. The other aspect looks to combine accepted and rejected applicants based on the previously defined corresponding columns to be used in machine learning algorithms. The modeling will be done with an 80-20 split of train and testing data.
 
 
 # Research Questions and Methodology
