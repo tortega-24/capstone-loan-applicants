@@ -72,16 +72,11 @@ question. Include the specific steps you will take, what form the answer will
 take (a number? table? visualization? model? Give all the specifics), and 
 estimate how many hours each question will take to complete.]
 
-1. Is smoking correlated with diabetes? To answer this, I will create a filled
-bar plot, with the left bar representing non-smokers, the middle bar
-representing people who smoke moderately, and the right bar representing heavy
-smokers. The bars will be the same height, and each bar will be
-colored two colors based on the proportion of patients in the group who do or
-do not have diabetes.
+1. Is employment length correlated to the acceptance of loans? To answer this, a grouped bar plot will be made with each employment length category representing two bars. One bar will represent the count of accepted observations and the other will be the count of rejected obervations. The two groups (rejected and accepted) will have different colors.
 
-2. Question 2? Plan for question 2.
+2. Is there a tendency for specific loans to be given during a specific months? To answer this, a rose plot will be constructed using the twelve months. The legend will represent the top five most frequent loans. Each loan will have a unique color. 
 
-3. Question 3? Plan for question 3.
+3. What is the frequency of accepted and rejected loans throughout the United States? To answer this, a map using geospatial data of the U.S. will plotted and matched with the first three digits of the applicant's zip code. A map using the states can also be built, but the main visual will use the zip code. Two graphs will be made splitting rejected and accepted applicants. The frequency will be recorded as a single gradient of a color with a higher count representing a darker gradient. A legend will be provided to indicate the gradient and the number that the different colors represent. 
 
 4. etc.
 
