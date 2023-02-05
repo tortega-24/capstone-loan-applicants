@@ -37,7 +37,7 @@ The data comes from a Kaggle dataset @geor19 and it is split into two separate c
 * Amount Requested: The total amount requested by the borrower.
 * Loan Title: The reason for applying for the loan.
 * Risk Score: The borrower's FICO score.
-* Debt-To-Income Ratio: A ration calculated using the borrower's total monthly debt payments on the total debt obligations, excluding mortgage and the requested LC loan, divided by the borrower's self-reported monthly income.
+* Debt-To-Income Ratio: A ratio calculated using the borrower's total monthly debt payments on the total debt obligations, excluding mortgage and the requested LC loan, divided by the borrower's self-reported monthly income.
 * Zip Code: The first 3 numbers of the zip code provided by the borrower in the loan application.
 * State: The state provided by the borrower in the loan application.
 * Employment Length: Possible values are between 0 and 10 where 0 is less than one year and 10 means ten or more years.
@@ -72,13 +72,19 @@ question. Include the specific steps you will take, what form the answer will
 take (a number? table? visualization? model? Give all the specifics), and 
 estimate how many hours each question will take to complete.]
 
-1. Is employment length correlated to the acceptance of loans? To answer this, a grouped bar plot will be made with each employment length category representing two bars. One bar will represent the count of accepted observations and the other will be the count of rejected obervations. The two groups (rejected and accepted) will have different colors.
+1. Is employment length correlated to the acceptance of loans? To answer this, a grouped bar plot will be made with each employment length category representing two bars. One bar will represent the count of accepted observations and the other will be the count of rejected obervations. The two groups (rejected and accepted) will have different colors. (2.5 hours)
 
-2. Is there a tendency for specific loans to be given during a specific months? To answer this, a rose plot will be constructed using the twelve months. The legend will represent the top five most frequent loans. Each loan will have a unique color. 
+2. Is there a tendency for specific loans to be given during a specific months? To answer this, a rose plot will be constructed using the twelve months. The legend will represent the top five most frequent loans. Each loan will have a unique color. (1.5 hours)
 
-3. What is the frequency of accepted and rejected loans throughout the United States? To answer this, a map using geospatial data of the U.S. will plotted and matched with the first three digits of the applicant's zip code. A map using the states can also be built, but the main visual will use the zip code. Two graphs will be made splitting rejected and accepted applicants. The frequency will be recorded as a single gradient of a color with a higher count representing a darker gradient. A legend will be provided to indicate the gradient and the number that the different colors represent. 
+3. What is the frequency of accepted and rejected loans throughout the United States? To answer this, a map using geospatial data of the U.S. will plotted and matched with the first three digits of the applicant's zip code. A map using the states can also be built, but the main visual will use the zip code. Two graphs will be made splitting rejected and accepted applicants. The frequency will be recorded as a single gradient of a color with a higher count representing a darker gradient. A legend will be provided to indicate the gradient and the number that the different colors represent. (3.5 hours)
 
-4. etc.
+4. Does the ratio of amount funded to amount requested change based on hardship flag, home ownership, and application type? To answer this, I will build a tree diagram that builds branches based on the outcome of the three chosen columns. Each level of the tree will be colored differently. The results of the tree will be inputted as the average of the grouped ratios. (3 hours)
+
+5. Does an applicant's FICO score change the interest rate they receive? What about the funding-requested ratio? To answer this, an area chart will be used to measure the count of applicants and split by their FICO score grouping. The x-axis will be either the interest rate or funding-requested ratio. Their will be two graphs, one for each x-axis variable. The FICO score groups will each have their own color along a single gradient and a legend will specify. (3 hours)
+
+6. Is there a bound to Debt-To-Income ratio so that customers who are below a certain limit cannot be accepted? To answer this, a histogram will be built to represent the DTI ratio of both rejected and accepted applicants. If there is a noticeable drop in acceptance, that observation may indicate a minimum acceptance. (1.5 hours)
+
+7. Using the matching features between accepted and rejected data, is it possible to effectively predict whether a candidate will be accepted or rejected? 
 
 # Work plan
 
