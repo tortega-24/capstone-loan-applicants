@@ -11,7 +11,9 @@ jupyter: python3
 ---
 
 # Introduction
-[This section should contain background and introduction to your general topic.] Loans are a fundamental aspect of not only the United States' economy but economies world wide. Loans provide funding to people lacking the current resources to consolidate debt, buy a house, buy a car, open a business, and any transaction that requires money. To make a profit, loans are expected to be paid back with interest. Companies want to know which applicants that apply for a loan will pay it back. Selecting a string of clients that default would spell disaster for the loaner. With teams of analysts, they build models to identify candidates. People on the outside of these lending companies want to know what traits make a candidate more or less likely to receive a loan. Using a dataset containing variables describing candidates that are accepted or rejected, the project will dig into the data to find insights and build visuals describing the population of both accepted and rejected applicants. Also, the project entails building a model that uses the features inherent in the dataset to predict whether a customer is accepted or rejected. The data belongs to a bank called LendingClub. LendingClub is an FDIC-insured bank that provides various loans.
+[This section should contain background and introduction to your general topic.] 
+
+Loans are a fundamental aspect of not only the United States' economy but economies world wide. Loans provide funding to people lacking the current resources to consolidate debt, buy a house, buy a car, open a business, and any transaction that requires money. To make a profit, loans are expected to be paid back with interest. Companies want to know which applicants that apply for a loan will pay it back. Selecting a string of clients that default would spell disaster for the loaner. With teams of analysts, they build models to identify candidates. People on the outside of these lending companies want to know what traits make a candidate more or less likely to receive a loan. Using a dataset containing variables describing candidates that are accepted or rejected, the project will dig into the data to find insights and build visuals describing the population of both accepted and rejected applicants. Also, the project entails building a model that uses the features inherent in the dataset to predict whether a customer is accepted or rejected. The data belongs to a bank called LendingClub. LendingClub is an FDIC-insured bank that provides various loans.
 
 # Dataset
 
@@ -26,7 +28,29 @@ variables that you plan to use in your analysis, for example:
 * age: The patient's age (months)
 
 ]
-The data comes from a Kaggle dataset  @nath19. 
+
+
+The data comes from a Kaggle dataset @geor19 and it is split into two separate csv files: one for accepted applicants, and one for rejected applicants. The accepted file contains over two million rows and one hundred and fifty-one columns. The rejected data contains over twenty-seven million rows and nine columns. The Kaggle posting does not efficiently provide a data dictionary for every column; however, another post in Kaggle provides information on each column @chan18. As stated in the introduction, the data was pulled from LendingClub. LendingClub no longer has the option to download this data.
+
+#### Variables Under Examination:
+
+* Amount Requested: The total amount requested by the borrower.
+* Loan Title: The reason for applying for the loan.
+* Risk Score: The borrower's FICO score.
+* Debt-To-Income Ratio: A ration calculated using the borrower's total monthly debt payments on the total debt obligations, excluding mortgage and the requested LC loan, divided by the borrower's self-reported monthly income.
+* Zip Code: The first 3 numbers of the zip code provided by the borrower in the loan application.
+* State: The state provided by the borrower in the loan application.
+* Employment Length: Possible values are between 0 and 10 where 0 is less than one year and 10 means ten or more years.
+* Interest Rate: Interest rate on the loan.
+* Employee Title: The job title supplied by the borrower.
+* Funded Amount: The total amount committed to that loan.
+* Hardship Flag: Flags whether or not the borrower is on a hardship plan.
+* Publicly Recorded Bankruptcies: Number of public record bankruptcies.
+* Home Ownership: Home ownership status provided by the borrower.
+* Loan Status: Current status of the loan.
+* Application Type: Indicates whether the loan is an individual application or a joint application with two co-borrowers.
+* Issue Date: The month the loan was funded.
+* Last Payment Date: Last month payment was received.
 
 # Data Acquisition and Processing
 
