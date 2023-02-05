@@ -115,25 +115,31 @@ have already been filled in for you.]
 
 * Presentation prep and practice (4 hours)
 * Presentation peer review (1.5 hours)
+* Assess status of project. If time allows, add ethical aspect about Zip Codes. (1 hour)
+* Begin drafting report (1 hour)
 
 **Week 9 (3/20 - 3/26):**
 
+* Clean up code, add any needed comments, and make sure the git repository looks professional (3 hours)
 * Poster prep (4 hours)
 
 **Week 10 (3/27 - 4/2):** *Poster Draft 1 due Monday 3/27*.
 *Peer feedback due Thursday 3/30*.
 
+* Continue writing report (2.5 hours)
 * Peer feedback (2.5 hours)
-
 * Poster revisions (2 hours)
 
 **Week 11 (4/3 - 4/9):** *Poster Draft 2 due Monday 4/3*.
 *Final Poster due Saturday 4/8*.
 
-* Poster revisions (1 hour).
+* Double-checking organization of files in git repository (1 hour)
+* Research the possibility of embedding animations of graphs inside blog post (2 hours)
+* Poster revisions (4 hour).
 
 **Week 12 (4/10 - 4/16):**
 
+* Continue drafting blog post (7 hours)
 **Week 13 (4/17 - 4/23):** [All project work should be done by the end of this 
 week. The remaining time will be used for writing up and presenting your 
 results.]
@@ -150,10 +156,9 @@ results.]
 
 * Final presentation prep and practice.
 
-* [Do not schedule any other tasks for this week.]
 
 **Final Exam Week (5/8):** *Final Presentations during final exam slot,
-Monday May 9th 3:20-6:40pm.* [Do not schedule any other tasks for this week.]
+Monday May 9th 3:20-6:40pm.* 
 
 
 Here's an example of citing a source [see @phil99, pp. 33-35]. Be sure the source information is entered in "BibTeX" form in the `references.bib` file.
