@@ -12,11 +12,11 @@ jupyter: python3
 
 # Introduction
 
-Loans are a fundamental aspect of not only the United States economy but economies worldwide. Loans provide funding to people lacking the current resources to consolidate debt, buy a house, buy a car, open a business, and any transaction that requires money. For loan companies to make a profit, loans are expected to be paid back with interest. Companies want to know which applicants that apply for a loan will pay it back. Selecting a string of clients that default would spell disaster for the loaner. With teams of analysts, companies build models to identify candidates. People outside of these lending companies, including me, want to know what traits make a candidate more or less likely to receive a loan. This project will dig into the data to find insights and build visuals describing the population of both accepted and rejected applicants. Also, the project involves building a model that uses some of the features inherent in the dataset to predict whether a customer is accepted or rejected. The data belongs to a bank called LendingClub. LendingClub is an FDIC-insured bank that provides peer-to-peer loan opportunities.
+Loans are a fundamental aspect of not only the United States economy but economies worldwide. Loans provide funding to people lacking the current resources to consolidate debt, buy a house, buy a car, open a business, and any transaction that requires money. For loan companies to make a profit, loans are expected to be paid back with interest. Companies want to know which applicants that apply for a loan will pay it back. Selecting a string of clients that default would spell disaster for the loaner. With teams of analysts, companies build models to identify candidates. People outside of these lending companies, including me, want to know what traits make a candidate more or less likely to receive a loan. This project will dig into the data to find insights and build visuals describing the population of both accepted and rejected applicants. Also, the project involves building a model that uses some of the features inherent in the dataset to predict whether a customer is accepted or rejected. The data belongs to a bank called LendingClub. LendingClub is a FDIC-insured bank that provides peer-to-peer loan opportunities. The company works by connecting investors with loan applicants.
 
 # Dataset
 
-The data comes from a Kaggle dataset and is split into two separate csv files: one for accepted applicants, and one for rejected applicants @geor19. The accepted file contains over two million rows and one hundred and fifty-one columns. The rejected data contains over twenty-seven million rows and nine columns. The Kaggle posting does not efficiently provide a data dictionary for every column; however, another post in Kaggle provides information on each column @chan18. As stated in the introduction, the data was pulled from LendingClub. The author of the Kaggle dataset  LendingClub no longer has the option to download this data.
+The data comes from a Kaggle dataset split into two separate csv files: one for accepted applicants and one for rejected applicants @geor19. The accepted file contains over two million rows and one hundred and fifty-one columns. The rejected data contains over twenty-seven million rows and nine columns. The Kaggle posting does not efficiently provide a data dictionary for every column; however, another post in Kaggle provides information on each column @chan18. As stated in the introduction, the data is from LendingClub. The author of the Kaggle dataset periodically updated the Kaggle dataset; however, he stopped updating the dataset in 2019. Other datasets on Kaggle use LendingClub data, but this dataset contains a wider date range than most. LendingClub no longer has the option to download this data.
 
 #### Variables Under Examination:
 
@@ -39,7 +39,23 @@ The data comes from a Kaggle dataset and is split into two separate csv files: o
 
 # Data Acquisition and Processing
 
-The data will be downloaded from the Kaggle dataset and extracted using 7-Zip. The data is too large and too uneven to analyze, so there will be a random selection of one hundred thousand rows from each file to be used for analysis. The cleaning portion will be split into multiple sections. The first step in the cleaning is identifying which variables correspond to both rejected and accepted files. Columns with a significant percentage of null values will be dropped from their dataset. The next step is matching the variables corresponding to both rejected and accepted tables. When a match is found, both variables will be renamed to have the same name. Then, any other column names that appear vague will be renamed. Next, the data will be checked to determine if each column is the right data type. After, we will use different imputation techniques to fill in missing values based on the data type. Each step will have its own documentation to explain the methods used and why it was chosen. All columns appear to be tidy, so there is no need to alter column values besides for imputation. Once the data looks clean, it will be used for two aspects of the project. The first aspect considers analysis of only accepted customer data, and a copy of the cleaned accepted data will be made. The other aspect looks to combine accepted and rejected applicants based on the previously defined corresponding columns to be used in machine learning algorithms. The modeling will be done with an 80-20 split of train and testing data.
+**Each step will have documentation to explain the methods used and why it was chosen.**
+
+#### Uploading the Data to GitHub
+
+The data will be downloaded from the Kaggle dataset and extracted using 7-Zip. The data is too large and too uneven to analyze, so there will be a random selection of one hundred thousand rows from each file to be used for analysis. The data will upload in portions to GitHub to comply with GitHub's file size constraints. 
+
+#### Trimming and Cleaning the Data
+
+Both files will be insepcted for missing values. Columns will be dropped if they have over thirty percent missing values. After trimming the columns down, columns in the rejected table will be matched with corresponding columns in the accepted table and placed into to a separate data frame. Mathcing columns will have their names replaced with a single name to identify the match. Columns that have unclear names will be edited. 
+
+#### Imputing and Cleaning
+
+The remaining columns will be rechecked for null values. Missing values in the data will be imputed based on probability, mean, median, or mode techniques. Before, each column is imputed, the data type of that column will be checked and changed if it does not appropriately match the observations. All columns appear to be tidy, so there is no need to alter column values besides for imputation. 
+
+#### Using the Data
+
+Once the data looks clean, it will be used for two aspects of the project. The first aspect considers the analysis of only accepted customer data, and a copy of the cleaned accepted data will be made. The other aspect looks to combine accepted and rejected applicants based on the previously defined corresponding columns to be used in machine learning algorithms. The modeling will be done with an 80-20 split of training and testing data.
 
 
 # Research Questions and Methodology
