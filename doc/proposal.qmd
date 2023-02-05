@@ -84,7 +84,7 @@ estimate how many hours each question will take to complete.]
 
 6. Is there a bound to Debt-To-Income ratio so that customers who are below a certain limit cannot be accepted? To answer this, a histogram will be built to represent the DTI ratio of both rejected and accepted applicants. If there is a noticeable drop in acceptance, that observation may indicate a minimum acceptance. (1.5 hours)
 
-7. Using the matching features between accepted and rejected data, is it possible to effectively predict whether a candidate will be accepted or rejected? 
+7. Using the matching features between accepted and rejected data, is it possible to effectively predict whether a candidate will be accepted or rejected? Three supervised machine learning models will be used to find the models accuracy, precision, and recall. With accepted being labeled ones and rejected zeroes, the goal is to identify the most applicants for acceptance while focusing on minimizing the false positives over false negatives. The three models to be used are KNN, Decision Tree, and Random Forests. A third ensemble method will be used that uses hard voting to classify. (7 hours)
 
 # Work plan
 
@@ -92,21 +92,28 @@ estimate how many hours each question will take to complete.]
 have around 7 hours worth of work each week. Writing work counts. Several tasks
 have already been filled in for you.]
 
-**Week 4 (2/6 - 2/12):** [Just an example: 
+**Week 4 (2/6 - 2/12):**
 
-* Data tidying and recoding (4 hours)
-* Question 2 (4 hours).]
+* Data tidying and recoding (6 hours)
+* Question 6 (1.5 hours)
 
 **Week 5 (2/13 - 2/19):**
 
+* Question 3 (3.5 hours)
+* Question 1 (2.5 hours)
+* Question 2 (1.5 hours)
 **Week 6 (2/20 - 2/26):**
 
+* Question 4 (3 hours)
+* Question 5 (3 hours)
+* Begin to outline presentation, assess status of project (1 hour)
 **Week 7 (2/27 - 3/5):**
 
-* Presentation prep and practice (4 hours)
+* Question 7 (7 hours)
 
 **Week 8 (3/6 - 3/12):** *Presentations in class on Thurs 3/9.*
 
+* Presentation prep and practice (4 hours)
 * Presentation peer review (1.5 hours)
 
 **Week 9 (3/20 - 3/26):**
