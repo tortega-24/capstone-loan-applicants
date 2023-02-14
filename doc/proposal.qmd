@@ -87,7 +87,7 @@ The processed data will be used in three separate ways. The first path takes onl
 
 * Question 3 (3.5 hours).
 * Question 1 (2.5 hours).
-* Question 2 (1.5 hours).
+* Question 2 (2.5 hours).
 
 **Week 6 (2/20 - 2/26):**
 
