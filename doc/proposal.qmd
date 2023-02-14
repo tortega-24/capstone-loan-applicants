@@ -33,7 +33,7 @@ The Kaggle dataset has two separate csv files: one for accepted applicants and o
 
 ### Variables in the Accepted Dataset Only
 
-* Interest Rate: The interest rate on the loan. Obervations are written as decimals (0.07 is 7%).
+* Interest Rate: The interest rate on the loan. Observations wrote as decimals (0.07 is 7%).
 * Employee Title: The job title supplied by the borrower.
 * Funded Amount: The total amount committed to that loan.
 * Hardship Flag: Flags whether or not the borrower is on a hardship plan.
@@ -50,7 +50,7 @@ The data will be downloaded from the Kaggle dataset and extracted using 7-Zip. T
 
 ## Trimming and Cleaning the Data
 
-All files will be inspected for missing values. Columns will be dropped with over thirty percent missing values. After trimming the columns down, columns in the rejected table will be matched with corresponding columns in the accepted table and placed into a separate data frame. Matching columns will have their names replaced with a single name to identify the match. Columns that have unclear names will be edited. A columns labeling the applicant's result will be added (0 for rejected, 1 for accepted). Another dataset will be made including all of the known zip code data and the applicant's result. Finally, a table will be made that includes accepted applicant data.
+All files will be inspected for missing values. Columns will be dropped with over thirty percent missing values. After trimming the columns down, columns in the rejected table will be matched with corresponding columns in the accepted table and placed into a separate data frame. Matching columns will have their names replaced with a single name to identify the match. Columns that have unclear names will be edited. A column labeling the applicant's result will be added (0 for rejected, 1 for accepted). Another dataset will be made including all of the zip code data and the applicant results. Finally, a table will be made that includes accepted applicant data.
 
 ## Imputing and Cleaning
 
@@ -66,11 +66,11 @@ The processed data will be used in three separate ways. The first path takes onl
 
 2. Is there a tendency for specific loans to be given during certain months? To answer this, a rose plot will be constructed using the loan issue month column. The accepted dataset will be used. The legend will represent the top five most frequent loans. A few of the loan titles are written responses. The written responses will have to be handled through NLP or other means. The top five will only be used because there are many different reasons for someone to take out a loan. Each loan will have a unique color. (2.5 hours)
 
-3. What is the frequency of accepted and rejected loans throughout the United States? To answer this, a map using geospatial data from the U.S. will be plotted and matched with the first three digits of the applicant's zip code. The zip code dataset will be used. A map using the states can be built, but the main visual will use the zip code. One graph will represent the percentage of accepted applicants. The percentage will be used and mapped to a specific shade of color, with a higher percent representing a darker gradient. A legend will denote the color intensity and have a number line to match the percent and shade. (3.5 hours)
+3. What is the frequency of accepted and rejected loans throughout the United States? To answer this, a map using geospatial data from the U.S. will be plotted and matched with the first three digits of the applicant's zip code. The zip code dataset will be used. A map using the states can be built, but the main visual will use the zip code. One graph will represent the percentage of accepted applicants. The percentage will be used and mapped to a specific shade of color, with a higher percentage representing a darker gradient. A legend will denote the color intensity and have a number line to match the percent and shade. (3.5 hours)
 
 4. Does the ratio of the amount funded over the amount requested change based on hardship flag, home ownership, and application type? To answer this, I will build a tree diagram that branches based on the options of the three columns. The accepted dataset will be used. Each level of the tree will be colored differently. The final leaf in each branch will represent the average ratio of all the candidates that fall to that leaf. If the tree becomes too complex visually, a table will be made to display the different branches. (3 hours)
 
-5. Does an applicant's FICO score change the interest rate they receive? What about the funding-requested ratio? To answer this, an area chart will measure the count of applicants and split them by their FICO score grouping. The x-axis will be either the interest rate or the funding-requested ratio. The accepted dataset will be used. There will be two graphs, one for each x-axis variable. The FICO score groups will each have a specific shade of color, and a legend will specify the shade each score category belongs. The issue date will be used to select a range of time. If possible, a website will be used to check U.S. economic rates and compare to the interest rates in the data. (3 hours)
+5. Does an applicant's FICO score change the interest rate they receive? What about the funding-requested ratio? To answer this, an area chart will measure the count of applicants and split them by their FICO score grouping. The x-axis will be either the interest rate or the funding-requested ratio. The accepted dataset will be used. There will be two graphs, one for each x-axis variable. The FICO score groups will each have a specific shade of color, and a legend will specify the shade each score category belongs. The issue date will be used to select a range. If possible, a website will check U.S. economic rates and compare them to the interest rates in the data. (3 hours)
 
 6. Is there a bound to the Debt-To-Income (DTI) ratio so customers below a limit cannot be accepted? To answer this, a histogram will represent the DTI ratio of both rejected and accepted applicants. The matched dataset will be used. The y-axis will represent the count of applicants, and the x-axis will show the DTI ratio. If there is a noticeable difference, it may indicate a minimum acceptance. A legend will separate rejected and accepted applicants by a distinct color. (1.5 hours)
 
