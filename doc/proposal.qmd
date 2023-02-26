@@ -81,41 +81,42 @@ The processed data will be used in three separate ways. The first path takes onl
 **Week 4 (2/6 - 2/12):**
 
 * Data tidying and recoding (6 hours).
-* Question 6 (1.5 hours).
+* Build general outline for question 6 (1.5 hours).
 
 **Week 5 (2/13 - 2/19):**
 
-* Question 3 (3.5 hours).
-* Question 1 (2.5 hours).
-* Question 2 (2.5 hours).
+* Build general outline for question 3 (3.5 hours).
+* Build general outline for question 1 (2.5 hours).
+* Build general outline for question 2 (2.5 hours).
 
 **Week 6 (2/20 - 2/26):**
 
-* Question 4 (3 hours).
-* Question 5 (3 hours).
+* Build general outline for question 4 (3 hours).
+* Build general outline for question 5 (3 hours).
 * Begin to outline the presentation, and assess the status of the project (1 hour).
 
 **Week 7 (2/27 - 3/5):**
 
-* Question 7 (7 hours).
+* Question 7 (5 hours).
+* Starting from question 1 assess each question and update it (2 hours).
 
 **Week 8 (3/6 - 3/12):** *Presentations in class on Thurs 3/9.*
 
-* Presentation prep and practice (4 hours).
+* Assess each question and update it (4 hours).
 * Presentation peer review (1.5 hours).
 * Assess the status of the project. If time allows, add an ethical aspect about Zip Codes. (1.5 hours).
 * Begin drafting blog (0.5 hours).
 
 **Week 9 (3/20 - 3/26):**
 
-* Clean up code, add any needed comments, and make sure the GitHub repository looks professional (3 hours).
+* Work on finishing design for each question (3.5 hours).
 * Poster prep (4 hours).
 
 **Week 10 (3/27 - 4/2):** *Poster Draft 1 due Monday 3/27*.
 *Peer feedback due Thursday 3/30*.
 
-* Continue writing the report (2.5 hours).
-* Peer feedback (2.5 hours).
+* Clean up code, add any needed comments, and make sure the GitHub repository looks professional (3 hours).
+* Peer feedback (1.5 hours).
 * Poster revisions (2 hours).
 
 **Week 11 (4/3 - 4/9):** *Poster Draft 2 due Monday 4/3*.
@@ -127,7 +128,8 @@ The processed data will be used in three separate ways. The first path takes onl
 
 **Week 12 (4/10 - 4/16):**
 
-* Continue drafting the blog post (7 hours)
+* Continue drafting the blog post (4 hours)
+* Review final poster for improvements in coding/visuals. Make necessary replacements (3 hours).
 
 **Week 13 (4/17 - 4/23):** 
 
