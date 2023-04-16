@@ -25,5 +25,5 @@
 [6] Hardship: https://www.creditkarma.com/credit-cards/i/how-hardship-plan-can-affect-credit#:~:text=A%20hardship%20plan%2C%20also%20known,right%20for%20your%20financial%20situation%3F
 
 Extra Resources:
-zip-codes
-https://www.unitedstateszipcodes.org/
+
+ZIP Codes: https://www.unitedstateszipcodes.org/
