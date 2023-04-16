@@ -10,7 +10,7 @@
   
 
 
-### Links
+### Resources
 
 [1] Data Source: https://www.kaggle.com/datasets/wordsforthewise/lending-club?select=accepted_2007_to_2018Q4.csv.gz
 
