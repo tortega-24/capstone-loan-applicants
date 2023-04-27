@@ -51,6 +51,7 @@ Not every piece of processing code will be displayed. Key decisions and general 
 :::
 
 ```{python}
+#| output: false
 # Importing Modules
 import pandas as pd
 
@@ -89,7 +90,6 @@ zip_df.head()
 The next table I will be making pulls accepted loan applications. To clean the columns I defined how many missing values were in each feature. Then, I decided to remove columns that contained at least 30% missing values.
 
 ```{python}
-
 col_to_be_dropped = []
 for column in accepted.columns:
     if (accepted[column].isnull().sum()/len(accepted)) > 0.3:
@@ -103,6 +103,7 @@ trimmed_accepted.shape
 After looking over the columns, I reduced the number of columns even further. I selected columns that would be most related to the questions I planned to answer. Then, I took the percentage of values I would have left if I decided to drop the NA rows. With a remaining 91%, I decided it would be better to drop the missing values instead of attempting to replace them. Lastly, I change the type of the FICO score columns and the policy code to integers. The final table consisted of 17 features.
 
 ```{python}
+#| output: false
 columns_needed = ['loan_amnt', 'title', 'last_fico_range_low', 'last_fico_range_high',
                  'dti', 'zip_code', 'addr_state', 'emp_length', 'emp_title', 
                  'funded_amnt', 'hardship_flag', 'home_ownership', 'loan_status', 
@@ -122,6 +123,7 @@ accepted_project.reset_index(drop=True, inplace=True)
 Lastly, I wanted a build a table that combined both accpeted and rejected loan applicants. Of the now 10 columns in the rejected table, added the applicant result, I dropped the Risk_Score column because it contained to many missing values (~18 million). The remaining columns will have their missing values dropped. Another edit that needed to be made was changing the debt-to-income ratio column to be a float type. To do this, I removed the percent sign and converted the type. 
 
 ```{python}
+#| output: false
 trimmed_rejected = rejected.drop(['Risk_Score'], axis=1)
 
 trimmed_rejected['Debt-To-Income Ratio'] = trimmed_rejected['Debt-To-Income Ratio'].str.replace('%', '', regex=True)
