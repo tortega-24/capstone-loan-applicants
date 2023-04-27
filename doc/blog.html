@@ -316,9 +316,10 @@ Note
 </div>
 <p>Next, I used the sample method to take 100000 rows from each table and concatenated them to form a new table. Finally, all three tables were written as csv files.</p>
 </section>
-<section id="is-employment-length-related-to-the-acceptance-of-loans" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="is-employment-length-related-to-the-acceptance-of-loans"><span class="header-section-number">1.3</span> Is employment length related to the acceptance of loans?</h2>
-<p>To analyze the employment length, I bult a grouped bar chart comparing loan applicants that were accepted and rejected.</p>
+</section>
+<section id="is-employment-length-related-to-the-acceptance-of-loans" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Is employment length related to the acceptance of loans?</h1>
+<p>To analyze the employment length, I bult a grouped bar chart comparing loan applicants that were accepted and rejected. This was taken using the model data that randomly sampled both candidates.</p>
 <div class="cell" data-execution_count="6">
 <details>
 <summary>Code</summary>
@@ -347,28 +348,36 @@ Note
 <p><img src="blog_files/figure-html/cell-7-output-1.png" width="610" height="506"></p>
 </div>
 </div>
+<p>Based on the results, many rejected candidates appear to have been at their jobs for a small amount of time. There is also a noticeble count of candidates that were accepted displaying an employment length greater than 10 years.</p>
 </section>
-<section id="is-there-a-tendency-for-specific-loans-to-be-given-during-certain-months" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="is-there-a-tendency-for-specific-loans-to-be-given-during-certain-months"><span class="header-section-number">1.4</span> Is there a tendency for specific loans to be given during certain months?</h2>
+<section id="is-there-a-tendency-for-specific-loans-to-be-given-during-certain-months" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Is there a tendency for specific loans to be given during certain months?</h1>
+<p>Utilizing natural language processing and some manual identification, I was able to group many of the different reasons applicants applied for loans. This was reflected in a rose chart that is labeled by month and takes all accepted applicant data from 2007-2018.</p>
+<p>*Will be adding a GIF describing years from 2007-2018</p>
+<p>Looking at the rose chart, we can observe a couple things. Firstly, three of the 12 months have a noticeable drop in overall accepted applicant counts. Why is there a drop? It is not entirely clear. Nothing jumps out as an explanation while doing some Googling. It might be a situation unique to LendingClub.</p>
+<p>Another note, debt and credit related issues form a large portion of the counts per month. When using natural language processing and manual identification, it appears that</p>
 </section>
-<section id="what-is-the-frequency-of-accepted-and-rejected-loans-throughout-the-united-states" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="what-is-the-frequency-of-accepted-and-rejected-loans-throughout-the-united-states"><span class="header-section-number">1.5</span> What is the frequency of accepted and rejected loans throughout the United States?</h2>
+<section id="what-is-the-frequency-of-accepted-and-rejected-loans-throughout-the-united-states" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> What is the frequency of accepted and rejected loans throughout the United States?</h1>
+<p>The goal for this question is to look at the overall acceptance rate of each ZIP Code across the Unites States’ mainland. Using census data collected by the U.S., I was able to group by ZIP Codes and join the census data.</p>
+<p>One of the key things that stands out is the large, scary space outlining the state of Iowa. As of the dates collected from the Kaggle dataset, Iowa did not allow their citizens to work with LendingClub. This is the most likely explanation for the very abismal acceptance rate.</p>
 </section>
-<section id="does-the-ratio-of-the-amount-funded-over-the-amount-requested-change-based-on-hardship-flag-home-ownership-and-application-type" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="does-the-ratio-of-the-amount-funded-over-the-amount-requested-change-based-on-hardship-flag-home-ownership-and-application-type"><span class="header-section-number">1.6</span> Does the ratio of the amount funded over the amount requested change based on hardship flag, home ownership, and application type?</h2>
+<section id="does-the-ratio-of-the-amount-funded-over-the-amount-requested-change-based-on-hardship-flag-home-ownership-and-application-type" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Does the ratio of the amount funded over the amount requested change based on hardship flag, home ownership, and application type?</h1>
+<p>This question analyzes accepted loan applicants in an attempt to understand what candidates are being accepted.</p>
+<p>Many of the accepted candidates with the highest FICO scores own homes and</p>
 </section>
-<section id="does-an-applicants-fico-score-change-the-interest-rate-they-receive-what-about-the-funding-requested-ratio" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="does-an-applicants-fico-score-change-the-interest-rate-they-receive-what-about-the-funding-requested-ratio"><span class="header-section-number">1.7</span> Does an applicant’s FICO score change the interest rate they receive? What about the funding-requested ratio?</h2>
+<section id="does-an-applicants-fico-score-change-the-interest-rate-they-receive-what-about-the-funding-requested-ratio" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Does an applicant’s FICO score change the interest rate they receive? What about the funding-requested ratio?</h1>
 </section>
-<section id="is-there-a-bound-to-the-debt-to-income-dti-ratio-so-customers-below-a-limit-cannot-be-accepted" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="is-there-a-bound-to-the-debt-to-income-dti-ratio-so-customers-below-a-limit-cannot-be-accepted"><span class="header-section-number">1.8</span> Is there a bound to the Debt-To-Income (DTI) ratio so customers below a limit cannot be accepted?</h2>
+<section id="is-there-a-bound-to-the-debt-to-income-dti-ratio-so-customers-below-a-limit-cannot-be-accepted" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Is there a bound to the Debt-To-Income (DTI) ratio so customers below a limit cannot be accepted?</h1>
 </section>
-<section id="using-the-matching-features-between-accepted-and-rejected-data-can-the-data-effectively-predict-whether-a-candidate-will-be-accepted-or-rejected" class="level2" data-number="1.9">
-<h2 data-number="1.9" class="anchored" data-anchor-id="using-the-matching-features-between-accepted-and-rejected-data-can-the-data-effectively-predict-whether-a-candidate-will-be-accepted-or-rejected"><span class="header-section-number">1.9</span> Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?</h2>
+<section id="using-the-matching-features-between-accepted-and-rejected-data-can-the-data-effectively-predict-whether-a-candidate-will-be-accepted-or-rejected" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?</h1>
 <p><strong>Model Equations</strong> to <em>my</em> <del>super</del> SUPER awesome <code>blog</code> post! <span class="math display">\[x^2 = 1\]</span></p>
-</section>
-<section id="references" class="level2" data-number="1.10">
-<h2 data-number="1.10" class="anchored" data-anchor-id="references"><span class="header-section-number">1.10</span> References</h2>
+<section id="references" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="references"><span class="header-section-number">8.1</span> References</h2>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -725,9 +734,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb8-143"><a href="#cb8-143" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-144"><a href="#cb8-144" aria-hidden="true" tabindex="-1"></a>Next, I used the sample method to take 100000 rows from each table and concatenated them to form a new table. Finally, all three tables were written as csv files.</span>
 <span id="cb8-145"><a href="#cb8-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-146"><a href="#cb8-146" aria-hidden="true" tabindex="-1"></a><span class="fu">## Is employment length related to the acceptance of loans?</span></span>
+<span id="cb8-146"><a href="#cb8-146" aria-hidden="true" tabindex="-1"></a><span class="fu"># Is employment length related to the acceptance of loans?</span></span>
 <span id="cb8-147"><a href="#cb8-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-148"><a href="#cb8-148" aria-hidden="true" tabindex="-1"></a>To analyze the employment length, I bult a grouped bar chart comparing loan applicants that were accepted and rejected.</span>
+<span id="cb8-148"><a href="#cb8-148" aria-hidden="true" tabindex="-1"></a>To analyze the employment length, I bult a grouped bar chart comparing loan applicants that were accepted and rejected. This was taken using the model data that randomly sampled both candidates.</span>
 <span id="cb8-149"><a href="#cb8-149" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-152"><a href="#cb8-152" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb8-153"><a href="#cb8-153" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -752,62 +761,81 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb8-172"><a href="#cb8-172" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
 <span id="cb8-173"><a href="#cb8-173" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb8-174"><a href="#cb8-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-175"><a href="#cb8-175" aria-hidden="true" tabindex="-1"></a><span class="fu">## Is there a tendency for specific loans to be given during certain months?</span></span>
-<span id="cb8-176"><a href="#cb8-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-179"><a href="#cb8-179" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb8-180"><a href="#cb8-180" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-175"><a href="#cb8-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-176"><a href="#cb8-176" aria-hidden="true" tabindex="-1"></a>Based on the results, many rejected candidates appear to have been at their jobs for a small amount of time. There is also a noticeble count of candidates that were accepted displaying an employment length greater than 10 years.</span>
+<span id="cb8-177"><a href="#cb8-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-178"><a href="#cb8-178" aria-hidden="true" tabindex="-1"></a><span class="fu"># Is there a tendency for specific loans to be given during certain months?</span></span>
+<span id="cb8-179"><a href="#cb8-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-180"><a href="#cb8-180" aria-hidden="true" tabindex="-1"></a>Utilizing natural language processing and some manual identification, I was able to group many of the different reasons applicants applied for loans. This was reflected in a rose chart that is labeled by month and takes all accepted applicant data from 2007-2018.</span>
 <span id="cb8-181"><a href="#cb8-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-182"><a href="#cb8-182" aria-hidden="true" tabindex="-1"></a><span class="fu">## What is the frequency of accepted and rejected loans throughout the United States?</span></span>
-<span id="cb8-183"><a href="#cb8-183" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-186"><a href="#cb8-186" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb8-187"><a href="#cb8-187" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-184"><a href="#cb8-184" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-185"><a href="#cb8-185" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-186"><a href="#cb8-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-187"><a href="#cb8-187" aria-hidden="true" tabindex="-1"></a>*Will be adding a GIF describing years from 2007-2018</span>
 <span id="cb8-188"><a href="#cb8-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-189"><a href="#cb8-189" aria-hidden="true" tabindex="-1"></a><span class="fu">## Does the ratio of the amount funded over the amount requested change based on hardship flag, home ownership, and application type?</span></span>
+<span id="cb8-189"><a href="#cb8-189" aria-hidden="true" tabindex="-1"></a>Looking at the rose chart, we can observe a couple things. Firstly, three of the 12 months have a noticeable drop in overall accepted applicant counts. Why is there a drop? It is not entirely clear. Nothing jumps out as an explanation while doing some Googling. It might be a situation unique to LendingClub. </span>
 <span id="cb8-190"><a href="#cb8-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-193"><a href="#cb8-193" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb8-194"><a href="#cb8-194" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb8-195"><a href="#cb8-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-196"><a href="#cb8-196" aria-hidden="true" tabindex="-1"></a><span class="fu">## Does an applicant's FICO score change the interest rate they receive? What about the funding-requested ratio?</span></span>
-<span id="cb8-197"><a href="#cb8-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-200"><a href="#cb8-200" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb8-201"><a href="#cb8-201" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb8-202"><a href="#cb8-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-203"><a href="#cb8-203" aria-hidden="true" tabindex="-1"></a><span class="fu">## Is there a bound to the Debt-To-Income (DTI) ratio so customers below a limit cannot be accepted?</span></span>
-<span id="cb8-204"><a href="#cb8-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-207"><a href="#cb8-207" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb8-208"><a href="#cb8-208" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb8-209"><a href="#cb8-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-210"><a href="#cb8-210" aria-hidden="true" tabindex="-1"></a><span class="fu">## Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?</span></span>
-<span id="cb8-211"><a href="#cb8-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-214"><a href="#cb8-214" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb8-215"><a href="#cb8-215" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-191"><a href="#cb8-191" aria-hidden="true" tabindex="-1"></a>Another note, debt and credit related issues form a large portion of the counts per month. When using natural language processing and manual identification, it appears that </span>
+<span id="cb8-192"><a href="#cb8-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-193"><a href="#cb8-193" aria-hidden="true" tabindex="-1"></a><span class="fu"># What is the frequency of accepted and rejected loans throughout the United States?</span></span>
+<span id="cb8-194"><a href="#cb8-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-195"><a href="#cb8-195" aria-hidden="true" tabindex="-1"></a>The goal for this question is to look at the overall acceptance rate of each ZIP Code across the Unites States' mainland. Using census data collected by the U.S., I was able to group by ZIP Codes and join the census data.</span>
+<span id="cb8-196"><a href="#cb8-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-199"><a href="#cb8-199" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-200"><a href="#cb8-200" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-201"><a href="#cb8-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-202"><a href="#cb8-202" aria-hidden="true" tabindex="-1"></a>One of the key things that stands out is the large, scary space outlining the state of Iowa. As of the dates collected from the Kaggle dataset, Iowa did not allow their citizens to work with LendingClub. This is the most likely explanation for the very abismal acceptance rate.</span>
+<span id="cb8-203"><a href="#cb8-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-204"><a href="#cb8-204" aria-hidden="true" tabindex="-1"></a><span class="fu"># Does the ratio of the amount funded over the amount requested change based on hardship flag, home ownership, and application type?</span></span>
+<span id="cb8-205"><a href="#cb8-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-206"><a href="#cb8-206" aria-hidden="true" tabindex="-1"></a>This question analyzes accepted loan applicants in an attempt to understand what candidates are being accepted.</span>
+<span id="cb8-207"><a href="#cb8-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-210"><a href="#cb8-210" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-211"><a href="#cb8-211" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-212"><a href="#cb8-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-213"><a href="#cb8-213" aria-hidden="true" tabindex="-1"></a>Many of the accepted candidates with the highest FICO scores own homes and </span>
+<span id="cb8-214"><a href="#cb8-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-215"><a href="#cb8-215" aria-hidden="true" tabindex="-1"></a><span class="fu"># Does an applicant's FICO score change the interest rate they receive? What about the funding-requested ratio?</span></span>
 <span id="cb8-216"><a href="#cb8-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-217"><a href="#cb8-217" aria-hidden="true" tabindex="-1"></a>**Model Equations** to *my* ~~super~~ SUPER awesome <span class="in">`blog`</span> post!</span>
-<span id="cb8-218"><a href="#cb8-218" aria-hidden="true" tabindex="-1"></a>$$x^2 = 1$$</span>
-<span id="cb8-219"><a href="#cb8-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-220"><a href="#cb8-220" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-221"><a href="#cb8-221" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
-<span id="cb8-222"><a href="#cb8-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-223"><a href="#cb8-223" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb8-224"><a href="#cb8-224" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including:</span>
-<span id="cb8-225"><a href="#cb8-225" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
-<span id="cb8-226"><a href="#cb8-226" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb8-227"><a href="#cb8-227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-228"><a href="#cb8-228" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
-<span id="cb8-229"><a href="#cb8-229" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tip With Caption</span></span>
+<span id="cb8-219"><a href="#cb8-219" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-220"><a href="#cb8-220" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-221"><a href="#cb8-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-222"><a href="#cb8-222" aria-hidden="true" tabindex="-1"></a><span class="fu"># Is there a bound to the Debt-To-Income (DTI) ratio so customers below a limit cannot be accepted?</span></span>
+<span id="cb8-223"><a href="#cb8-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-226"><a href="#cb8-226" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-227"><a href="#cb8-227" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-228"><a href="#cb8-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-229"><a href="#cb8-229" aria-hidden="true" tabindex="-1"></a><span class="fu"># Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?</span></span>
 <span id="cb8-230"><a href="#cb8-230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-231"><a href="#cb8-231" aria-hidden="true" tabindex="-1"></a>This is an example of a callout with a caption.</span>
-<span id="cb8-232"><a href="#cb8-232" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb8-233"><a href="#cb8-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-234"><a href="#cb8-234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-235"><a href="#cb8-235" aria-hidden="true" tabindex="-1"></a>For your reference, here's an example of a Python code cell in Quarto, along with a figure that gets generated, along with a caption and a label so that it can be referred to automatically as "Figure 1" (or whatever) in the writeup.</span>
-<span id="cb8-236"><a href="#cb8-236" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-237"><a href="#cb8-237" aria-hidden="true" tabindex="-1"></a>For a demonstration of a line plot on a polar axis, see @fig-polar.</span>
+<span id="cb8-233"><a href="#cb8-233" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-234"><a href="#cb8-234" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-235"><a href="#cb8-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-236"><a href="#cb8-236" aria-hidden="true" tabindex="-1"></a>**Model Equations** to *my* ~~super~~ SUPER awesome <span class="in">`blog`</span> post!</span>
+<span id="cb8-237"><a href="#cb8-237" aria-hidden="true" tabindex="-1"></a>$$x^2 = 1$$</span>
 <span id="cb8-238"><a href="#cb8-238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-239"><a href="#cb8-239" aria-hidden="true" tabindex="-1"></a>Here's an example of citing a source <span class="co">[</span><span class="ot">see @phil99, pp. 33-35</span><span class="co">]</span>. Be sure the source information is entered in "BibTeX" form in the <span class="in">`references.bib`</span> file.</span>
-<span id="cb8-240"><a href="#cb8-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-239"><a href="#cb8-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-240"><a href="#cb8-240" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
 <span id="cb8-241"><a href="#cb8-241" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-242"><a href="#cb8-242" aria-hidden="true" tabindex="-1"></a>The bibliography will automatically get generated. Any sources you cite in the document will be included. Other entries in the <span class="in">`.bib`</span> file will not be included.</span>
+<span id="cb8-242"><a href="#cb8-242" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb8-243"><a href="#cb8-243" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including:</span>
+<span id="cb8-244"><a href="#cb8-244" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb8-245"><a href="#cb8-245" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-246"><a href="#cb8-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-247"><a href="#cb8-247" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
+<span id="cb8-248"><a href="#cb8-248" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tip With Caption</span></span>
+<span id="cb8-249"><a href="#cb8-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-250"><a href="#cb8-250" aria-hidden="true" tabindex="-1"></a>This is an example of a callout with a caption.</span>
+<span id="cb8-251"><a href="#cb8-251" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb8-252"><a href="#cb8-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-253"><a href="#cb8-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-254"><a href="#cb8-254" aria-hidden="true" tabindex="-1"></a>For your reference, here's an example of a Python code cell in Quarto, along with a figure that gets generated, along with a caption and a label so that it can be referred to automatically as "Figure 1" (or whatever) in the writeup.</span>
+<span id="cb8-255"><a href="#cb8-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-256"><a href="#cb8-256" aria-hidden="true" tabindex="-1"></a>For a demonstration of a line plot on a polar axis, see @fig-polar.</span>
+<span id="cb8-257"><a href="#cb8-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-258"><a href="#cb8-258" aria-hidden="true" tabindex="-1"></a>Here's an example of citing a source <span class="co">[</span><span class="ot">see @phil99, pp. 33-35</span><span class="co">]</span>. Be sure the source information is entered in "BibTeX" form in the <span class="in">`references.bib`</span> file.</span>
+<span id="cb8-259"><a href="#cb8-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-260"><a href="#cb8-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-261"><a href="#cb8-261" aria-hidden="true" tabindex="-1"></a>The bibliography will automatically get generated. Any sources you cite in the document will be included. Other entries in the <span class="in">`.bib`</span> file will not be included.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

@@ -133,9 +133,9 @@ trimmed_rejected['Debt-To-Income Ratio'] = trimmed_rejected['Debt-To-Income Rati
 
 Next, I used the sample method to take 100000 rows from each table and concatenated them to form a new table. Finally, all three tables were written as csv files.
 
-## Is employment length related to the acceptance of loans?
+# Is employment length related to the acceptance of loans?
 
-To analyze the employment length, I bult a grouped bar chart comparing loan applicants that were accepted and rejected.
+To analyze the employment length, I bult a grouped bar chart comparing loan applicants that were accepted and rejected. This was taken using the model data that randomly sampled both candidates.
 
 ```{python}
 import pandas as pd
@@ -160,37 +160,56 @@ plt.legend(["Accepted", "Rejected"])
 plt.show()
 ```
 
-## Is there a tendency for specific loans to be given during certain months?
+
+Based on the results, many rejected candidates appear to have been at their jobs for a small amount of time. There is also a noticeble count of candidates that were accepted displaying an employment length greater than 10 years.
+
+# Is there a tendency for specific loans to be given during certain months?
+
+Utilizing natural language processing and some manual identification, I was able to group many of the different reasons applicants applied for loans. This was reflected in a rose chart that is labeled by month and takes all accepted applicant data from 2007-2018.
 
 ```{python}
 
 ```
 
-## What is the frequency of accepted and rejected loans throughout the United States?
+*Will be adding a GIF describing years from 2007-2018
+
+Looking at the rose chart, we can observe a couple things. Firstly, three of the 12 months have a noticeable drop in overall accepted applicant counts. Why is there a drop? It is not entirely clear. Nothing jumps out as an explanation while doing some Googling. It might be a situation unique to LendingClub. 
+
+Another note, debt and credit related issues form a large portion of the counts per month. When using natural language processing and manual identification, it appears that 
+
+# What is the frequency of accepted and rejected loans throughout the United States?
+
+The goal for this question is to look at the overall acceptance rate of each ZIP Code across the Unites States' mainland. Using census data collected by the U.S., I was able to group by ZIP Codes and join the census data.
 
 ```{python}
 
 ```
 
-## Does the ratio of the amount funded over the amount requested change based on hardship flag, home ownership, and application type?
+One of the key things that stands out is the large, scary space outlining the state of Iowa. As of the dates collected from the Kaggle dataset, Iowa did not allow their citizens to work with LendingClub. This is the most likely explanation for the very abismal acceptance rate.
+
+# Does the ratio of the amount funded over the amount requested change based on hardship flag, home ownership, and application type?
+
+This question analyzes accepted loan applicants in an attempt to understand what candidates are being accepted.
 
 ```{python}
 
 ```
 
-## Does an applicant's FICO score change the interest rate they receive? What about the funding-requested ratio?
+Many of the accepted candidates with the highest FICO scores own homes and 
+
+# Does an applicant's FICO score change the interest rate they receive? What about the funding-requested ratio?
 
 ```{python}
 
 ```
 
-## Is there a bound to the Debt-To-Income (DTI) ratio so customers below a limit cannot be accepted?
+# Is there a bound to the Debt-To-Income (DTI) ratio so customers below a limit cannot be accepted?
 
 ```{python}
 
 ```
 
-## Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?
+# Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?
 
 ```{python}
 
