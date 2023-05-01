@@ -6,7 +6,8 @@ bibliography: references.bib
 number-sections: true
 format:
   html:
-    theme: default
+    toc: true
+    theme: simplex
     rendering: embed-resources
     code-fold: true
     code-tools: true
@@ -15,6 +16,8 @@ jupyter: python3
 ---
 
 # LendingClub Loan Applications
+
+![Photo downloaded from Unsplash: Credits - Tierra Mallorca](loanphoto.jpg)
 
 LendingClub is a financial technology company that has had over 4 million members since 2007. The 'fintech' company offers customers banking and loan opportunities. Something that has interested me in recent years has revolved around understanding how loan applicants are accepted. Through a Kaggle dataset, I was able to track loan applicants that applied for loans through LendingClub (reference). The data spans 11 years, from 2007 to 2018, and contains two tables: a rejected and an accepted loan applicant table.
 
@@ -42,6 +45,18 @@ Although some features were easy to understand, many columns were entreched in f
 
 **Question 7:** Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?
 
+```{python}
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import plotly.io as pio
+import plotly.express as px
+import geopandas as gpd
+import fiona
+import matplotlib
+#from plotnine import ggplot, geom_point, aes, stat_smooth, facet_wrap
+```
+
 ## Preprocessing the Data
 
 Before answering the above questions, the data needed to be shaped and organized. A mix of cleaning techniques were used to break the raw csv files into distinct tables: a ZIP Code table, a model table, and an accepted applicant table.
@@ -50,10 +65,8 @@ Before answering the above questions, the data needed to be shaped and organized
 Not every piece of processing code will be displayed. Key decisions and general steps will be listed; however, I want to limit the amount of code listed here and encourage you to visit the repository.
 :::
 
-```{python}
+```{{python}}
 #| output: false
-# Importing Modules
-import pandas as pd
 
 # Reading Data
 accepted = pd.read_csv("../accepted_2007_to_2018Q4.csv")
@@ -71,7 +84,7 @@ The two files being imported are large in size and could not be uploaded to the 
 
 Now that the files have been imported, the first thing I do is create a csv for ZIP Codes. Both raw tables contain applicants' first three digits of their ZIP Code. A new dataset will combine both ZIP Code columns and applicant result columns. There are a few missing values in the data that will be dropped.
 
-```{python}
+```{{python}}
 rejected['Zip Code'].isnull().sum()/len(rejected)
 accepted['zip_code'].isnull().sum()/len(accepted)
 
@@ -89,7 +102,7 @@ zip_df.head()
 
 The next table I will be making pulls accepted loan applications. To clean the columns I defined how many missing values were in each feature. Then, I decided to remove columns that contained at least 30% missing values.
 
-```{python}
+```{{python}}
 col_to_be_dropped = []
 for column in accepted.columns:
     if (accepted[column].isnull().sum()/len(accepted)) > 0.3:
@@ -102,7 +115,7 @@ trimmed_accepted.shape
 
 After looking over the columns, I reduced the number of columns even further. I selected columns that would be most related to the questions I planned to answer. Then, I took the percentage of values I would have left if I decided to drop the NA rows. With a remaining 91%, I decided it would be better to drop the missing values instead of attempting to replace them. Lastly, I change the type of the FICO score columns and the policy code to integers. The final table consisted of 17 features.
 
-```{python}
+```{{python}}
 #| output: false
 columns_needed = ['loan_amnt', 'title', 'last_fico_range_low', 'last_fico_range_high',
                  'dti', 'zip_code', 'addr_state', 'emp_length', 'emp_title', 
@@ -122,7 +135,7 @@ accepted_project.reset_index(drop=True, inplace=True)
 
 Lastly, I wanted a build a table that combined both accpeted and rejected loan applicants. Of the now 10 columns in the rejected table, added the applicant result, I dropped the Risk_Score column because it contained to many missing values (~18 million). The remaining columns will have their missing values dropped. Another edit that needed to be made was changing the debt-to-income ratio column to be a float type. To do this, I removed the percent sign and converted the type. 
 
-```{python}
+```{{python}}
 #| output: false
 trimmed_rejected = rejected.drop(['Risk_Score'], axis=1)
 
@@ -138,10 +151,6 @@ Next, I used the sample method to take 100000 rows from each table and concatena
 To analyze the employment length, I bult a grouped bar chart comparing loan applicants that were accepted and rejected. This was taken using the model data that randomly sampled both candidates.
 
 ```{python}
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-
 df = pd.read_csv("../model_only_data.csv")
 
 question_one = df[['applicant_result', 'emp_length']]
@@ -168,10 +177,37 @@ Based on the results, many rejected candidates appear to have been at their jobs
 Utilizing natural language processing and some manual identification, I was able to group many of the different reasons applicants applied for loans. This was reflected in a rose chart that is labeled by month and takes all accepted applicant data from 2007-2018.
 
 ```{python}
+group_dates = pd.read_csv("../group_dates.csv")
 
+fig = px.bar_polar(group_dates, r="count",theta='issue_month',
+                   color="reduced_reason", labels={"reduced_reason": "Loan Types"})
+
+fig.update_layout(legend=dict(
+    yanchor="top",
+    y=0.80,
+    xanchor="left",
+    x=1.1,
+    bgcolor="LightGray",
+    bordercolor="Black",
+    borderwidth=1),font=dict(
+        size=15))
+fig.update_polars(radialaxis_nticks=11)
+fig.update_polars(angularaxis_tickfont_size=15)
+fig.update_polars(radialaxis_tickfont_size=15)
+fig.update_polars(radialaxis_angle=70)
+fig.update_polars(radialaxis_tickangle=90)
+config = {
+  'toImageButtonOptions': {
+    'format': 'png', # one of png, svg, jpeg, webp
+    'filename': 'custom_image',
+    'height': 1680,
+    'width': 2380
+  }
+}
+fig.show(config=config)
 ```
 
-*Will be adding a GIF describing years from 2007-2018
+![Different LendingClub Loan Applications by Month and Year](loantypes.gif)
 
 Looking at the rose chart, we can observe a couple things. Firstly, three of the 12 months have a noticeable drop in overall accepted applicant counts. Why is there a drop? It is not entirely clear. Nothing jumps out as an explanation while doing some Googling. It might be a situation unique to LendingClub. 
 
@@ -181,8 +217,43 @@ Another note, debt and credit related issues form a large portion of the counts 
 
 The goal for this question is to look at the overall acceptance rate of each ZIP Code across the Unites States' mainland. Using census data collected by the U.S., I was able to group by ZIP Codes and join the census data.
 
-```{python}
+```{{python}}
+zip_df = pd.read_csv("../zip_only_data.csv")
+zip_df = zip_df.drop(['Unnamed: 0'], axis = 1)
+df_2015 = gpd.read_file('../tl_2015_us_zcta510.shp')
 
+zip_ratio = pd.DataFrame(columns=['accepted_to_total_ratio', 'zip_code'])
+zip_df['zip_code'][zip_df['zip_code']=="09Oxx"] = "090xx"
+zip_df.reset_index(drop=True, inplace=True)
+group_zip = zip_df.groupby(['zip_code', 'applicant_result']).size()
+group_zip = pd.DataFrame(group_zip, columns=['Count'])
+group_zip.reset_index(inplace=True)
+temp_df = pd.DataFrame(columns=['accepted_rejected_ratio'])
+group_zip['Count'][(group_zip['zip_code']=="001xx") & (group_zip['applicant_result']==1)].sum()
+
+for zip_code in group_zip['zip_code']:
+    temp_df.loc[len(temp_df)] = [group_zip['Count'][(group_zip['zip_code']==zip_code) & (group_zip['applicant_result']==1)].sum()
+                                 /group_zip['Count'][group_zip['zip_code']==zip_code].sum()]
+concat_zip = pd.concat([group_zip, temp_df], axis=1)
+concat_zip = concat_zip[concat_zip['applicant_result']==0]
+concat_zip.reset_index(drop=True, inplace=True)
+
+df_2015['zip_code'] = df_2015['ZCTA5CE10'].astype('str')
+df_2015['zip_code'] = df_2015['zip_code'].str.pad(5, 'left', '0')
+df_2015['zip_code'] = df_2015['zip_code'].str.slice(0,3)
+df_2015['zip_code'] = df_2015['zip_code'].str.pad(5, 'right', 'x')
+df_map_2015 = df_2015.merge(concat_zip[['zip_code', 'accepted_rejected_ratio']], on='zip_code', how='inner')
+
+matplotlib.rcParams['font.size'] = 50
+fig, ax = plt.subplots(1, figsize=(50, 50))
+df_map_2015.plot(column = df_map_2015['accepted_rejected_ratio'], cmap='viridis', legend=True, 
+            legend_kwds={'label': "Ratio of Accepted Applicants", 'orientation': "horizontal", "pad": 0.01,
+                        "shrink": .7}, ax=ax, alpha=.9)
+ax.set_xlim(-126, -65)
+ax.set_ylim(24, 50)
+plt.axis('off')
+plt.title
+plt.show()
 ```
 
 One of the key things that stands out is the large, scary space outlining the state of Iowa. As of the dates collected from the Kaggle dataset, Iowa did not allow their citizens to work with LendingClub. This is the most likely explanation for the very abismal acceptance rate.
@@ -192,7 +263,17 @@ One of the key things that stands out is the large, scary space outlining the st
 This question analyzes accepted loan applicants in an attempt to understand what candidates are being accepted.
 
 ```{python}
+df = pd.read_csv("../accepted_only_data.csv")
+df_new = df[~df['home_ownership'].isin(['OTHER', 'ANY', 'NONE'])]
+grouped_values = df_new.groupby(['home_ownership', 'application_type', 'hardship_flag'])['fico_range_low'].median()
+grouped_values =pd.DataFrame(grouped_values)
+grouped_values.reset_index(inplace=True)
+grouped_values.sort_values(by='fico_range_low',ascending=False)
 
+grouped_values_dti = df_new.groupby(['home_ownership', 'application_type', 'hardship_flag'])['dti'].median()
+grouped_values_dti = pd.DataFrame(grouped_values_dti)
+grouped_values_dti.reset_index(inplace=True)
+grouped_values_dti.sort_values(by='dti', ascending=True)
 ```
 
 Many of the accepted candidates with the highest FICO scores own homes and 
@@ -203,10 +284,25 @@ Many of the accepted candidates with the highest FICO scores own homes and
 
 ```
 
+![Different LendingClub Loan Applications by Month and Year](interestrate.gif)
+
 # Is there a bound to the Debt-To-Income (DTI) ratio so customers below a limit cannot be accepted?
 
 ```{python}
+model_df = pd.read_csv("../model_only_data.csv")
+graph_df = model_df[['debt_to_income_ratio', 'applicant_result']][model_df['debt_to_income_ratio'] <= 100]
+fig, ax = plt.subplots()
+counts, edges, bars = ax.hist([graph_df['debt_to_income_ratio'][graph_df['applicant_result'] == 0],
+          graph_df['debt_to_income_ratio'][graph_df['applicant_result'] == 1]], histtype='barstacked', 
+                              label=['Rejected', 'Accepted'])
+ax.legend(prop={'size': 10})
+ax.set_title('Accepted and Rejected Debt-To-Income-Ratio')
+plt.xticks([0,10,20,30,40,50,60,70,80,90,100])
+plt.yticks([0,10000,20000,30000,40000,50000,60000,70000])
 
+ax.bar_label(bars[0], padding=-1, color='black', fontsize=12)
+ax.bar_label(bars[1], padding=10, color='black', fontsize=12)
+plt.show()
 ```
 
 # Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?
