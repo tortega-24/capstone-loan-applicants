@@ -3,7 +3,9 @@ title: "Understanding LendingClub Loan Application Data"
 subtitle: "Spring 2023"
 author: "Thomas Ortega"
 bibliography: references.bib
-number-sections: true
+execute:
+  warning: false
+number-sections: false
 format:
   html:
     toc: true
@@ -19,13 +21,13 @@ jupyter: python3
 
 ![Photo downloaded from Unsplash: Credits - Tierra Mallorca](loanphoto.jpg)
 
-LendingClub is a financial technology company that has had over 4 million members since 2007. The 'fintech' company offers customers banking and loan opportunities. Something that has interested me in recent years has revolved around understanding how loan applicants are accepted. Through a Kaggle dataset, I was able to track loan applicants that applied for loans through LendingClub (reference). The data spans 11 years, from 2007 to 2018, and contains two tables: a rejected and an accepted loan applicant table.
+LendingClub is a financial technology company that has had over 4 million members since 2007. The 'fintech' company offers customers banking and loan opportunities. Something that has interested me in recent years has revolved around understanding how loan applicants are accepted. Through a Kaggle dataset (@geor19), I was able to track loan applicants that applied for loans through LendingClub (reference). The data spans 11 years, from 2007 to 2018, and contains two tables: a rejected and an accepted loan applicant table.
 
 :::{.callout-note}
 You can find the link to my full code and documentation here: [GitHub Repository](https://github.com/tortega-24/capstone-loan-applicants/tree/main)
 :::
 
-The accepted applicant table contains approximately 2 million rows and lists over 150 features. The rejected applicant table extends out to about 27 million rows, and has exactly 9 feastures. To understand all of the different features, a separate Kaggle resource was used that identifies the columns that appear in the dataset (reference).  
+The accepted applicant table contains approximately 2 million rows and lists over 150 features. The rejected applicant table extends out to about 27 million rows, and has exactly 9 feastures. To understand all of the different features, a separate Kaggle resource was used that identifies the columns that appear in the dataset (@chan18).  
 
 ## Goals and Introduction to Features
 
@@ -45,6 +47,8 @@ Although some features were easy to understand, many columns were entreched in f
 
 **Question 7:** Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?
 
+**Imports for Project**
+
 ```{python}
 import pandas as pd
 import numpy as np
@@ -54,6 +58,16 @@ import plotly.express as px
 import geopandas as gpd
 import fiona
 import matplotlib
+import seaborn as sns
+from sklearn.ensemble import VotingClassifier
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier as knn
+import math as m
+from sklearn.model_selection import train_test_split
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+from sklearn import preprocessing
 #from plotnine import ggplot, geom_point, aes, stat_smooth, facet_wrap
 ```
 
@@ -151,6 +165,8 @@ Next, I used the sample method to take 100000 rows from each table and concatena
 To analyze the employment length, I bult a grouped bar chart comparing loan applicants that were accepted and rejected. This was taken using the model data that randomly sampled both candidates.
 
 ```{python}
+#| label: fig-employment
+#| fig-cap: "Employment Length"
 df = pd.read_csv("../model_only_data.csv")
 
 question_one = df[['applicant_result', 'emp_length']]
@@ -162,7 +178,7 @@ width = 0.2
 plt.bar(x-0.2, y1, width, color='cyan')
 plt.bar(x, y2, width, color='orange')
 plt.xticks(x, question_one['emp_length'].value_counts().sort_index().index, rotation=90)
-plt.xlabel("Self-Reported Employee Length")
+plt.xlabel("Self-Reported Employment Length")
 plt.ylabel("Counts")
 plt.title("Accepted Vs. Rejected Based on Employment Length")
 plt.legend(["Accepted", "Rejected"])
@@ -170,13 +186,15 @@ plt.show()
 ```
 
 
-Based on the results, many rejected candidates appear to have been at their jobs for a small amount of time. There is also a noticeble count of candidates that were accepted displaying an employment length greater than 10 years.
+To address the immediately obvious elephant in the room, many of the rejected candidates claim that they have been at their job for less than a year. Being honest is usually good for you, but in this case it appears having less than a years experience is detrimental. @fig-employment
 
 # Is there a tendency for specific loans to be given during certain months?
 
-Utilizing natural language processing and some manual identification, I was able to group many of the different reasons applicants applied for loans. This was reflected in a rose chart that is labeled by month and takes all accepted applicant data from 2007-2018.
+Utilizing natural language processing and some manual identification @nlpcode, I was able to group many of the different reasons applicants applied for loans. This was reflected in a rose chart that is labeled by month and takes all accepted applicant data from 2007-2018.
 
 ```{python}
+#| label: fig-type
+#| fig-cap: "Loan Type"
 group_dates = pd.read_csv("../group_dates.csv")
 
 fig = px.bar_polar(group_dates, r="count",theta='issue_month',
@@ -207,42 +225,23 @@ config = {
 fig.show(config=config)
 ```
 
+
+Looking at the rose chart @fig-type, we can observe a couple things. Firstly, three of the 12 months have a noticeable drop in overall accepted applicant counts. Why is there a drop? It is not entirely clear. Nothing jumps out as an explanation while doing some Googling. It might be a situation unique to LendingClub. 
+
+However, I can shed some light on whether the pattern is consistent for each year or different. By creating a gif, we can observe the yearly changes in counts by month.
+
 ![Different LendingClub Loan Applications by Month and Year](loantypes.gif)
 
-Looking at the rose chart, we can observe a couple things. Firstly, three of the 12 months have a noticeable drop in overall accepted applicant counts. Why is there a drop? It is not entirely clear. Nothing jumps out as an explanation while doing some Googling. It might be a situation unique to LendingClub. 
-
-Another note, debt and credit related issues form a large portion of the counts per month. When using natural language processing and manual identification, it appears that 
+:::{.callout-note}
+Note that the gif ranges from 2008 to 2018. It does not cover 2007 because LendingClub had small counts for that year and did not accept candidates in every month.
+:::
 
 # What is the frequency of accepted and rejected loans throughout the United States?
 
-The goal for this question is to look at the overall acceptance rate of each ZIP Code across the Unites States' mainland. Using census data collected by the U.S., I was able to group by ZIP Codes and join the census data.
+LendingClub has had over [4 million members](https://ir.lendingclub.com/news/news-details/2022/LendingClub-Surpasses-4-Million-Members/default.aspx) since 2007 stemming from across the United States. So, what does the acceptance rate look like across the U.S.? Using census data, I made a choropleth graphic visualizing the acceptance rate across 48 of the states–sorry Alaska and Hawaii. Alaska and Hawaii citizens can apply for loans via LendingClub; but, they are not included because it stretches the choropleth.
 
 ```{{python}}
-zip_df = pd.read_csv("../zip_only_data.csv")
-zip_df = zip_df.drop(['Unnamed: 0'], axis = 1)
-df_2015 = gpd.read_file('../tl_2015_us_zcta510.shp')
-
-zip_ratio = pd.DataFrame(columns=['accepted_to_total_ratio', 'zip_code'])
-zip_df['zip_code'][zip_df['zip_code']=="09Oxx"] = "090xx"
-zip_df.reset_index(drop=True, inplace=True)
-group_zip = zip_df.groupby(['zip_code', 'applicant_result']).size()
-group_zip = pd.DataFrame(group_zip, columns=['Count'])
-group_zip.reset_index(inplace=True)
-temp_df = pd.DataFrame(columns=['accepted_rejected_ratio'])
-group_zip['Count'][(group_zip['zip_code']=="001xx") & (group_zip['applicant_result']==1)].sum()
-
-for zip_code in group_zip['zip_code']:
-    temp_df.loc[len(temp_df)] = [group_zip['Count'][(group_zip['zip_code']==zip_code) & (group_zip['applicant_result']==1)].sum()
-                                 /group_zip['Count'][group_zip['zip_code']==zip_code].sum()]
-concat_zip = pd.concat([group_zip, temp_df], axis=1)
-concat_zip = concat_zip[concat_zip['applicant_result']==0]
-concat_zip.reset_index(drop=True, inplace=True)
-
-df_2015['zip_code'] = df_2015['ZCTA5CE10'].astype('str')
-df_2015['zip_code'] = df_2015['zip_code'].str.pad(5, 'left', '0')
-df_2015['zip_code'] = df_2015['zip_code'].str.slice(0,3)
-df_2015['zip_code'] = df_2015['zip_code'].str.pad(5, 'right', 'x')
-df_map_2015 = df_2015.merge(concat_zip[['zip_code', 'accepted_rejected_ratio']], on='zip_code', how='inner')
+df_map_2015 = gpd.read_file('../2015_map_data.shp')
 
 matplotlib.rcParams['font.size'] = 50
 fig, ax = plt.subplots(1, figsize=(50, 50))
@@ -256,11 +255,11 @@ plt.title
 plt.show()
 ```
 
-One of the key things that stands out is the large, scary space outlining the state of Iowa. As of the dates collected from the Kaggle dataset, Iowa did not allow their citizens to work with LendingClub. This is the most likely explanation for the very abismal acceptance rate.
+The interesting thing that stands out is the large, scary space outlining the state of Iowa. As of the dates collected from the Kaggle dataset, Iowa did not allow their citizens to apply for loans with LendingClub. This is the most likely explanation for the very abismal acceptance rate.
 
 # Does the ratio of the amount funded over the amount requested change based on hardship flag, home ownership, and application type?
 
-This question analyzes accepted loan applicants in an attempt to understand what candidates are being accepted.
+Loan applicants that are approved for loans must have differences between each other–right? To take a further look, I describe applicants by their home status, whether they filed jointly or not, and if they have had to reduce their payment plans in the past (hardhip flag). These features will then be used to order applicants based on their median FICO scores and debt-to-income ratios.
 
 ```{python}
 df = pd.read_csv("../accepted_only_data.csv")
@@ -270,23 +269,55 @@ grouped_values =pd.DataFrame(grouped_values)
 grouped_values.reset_index(inplace=True)
 grouped_values.sort_values(by='fico_range_low',ascending=False)
 
+```
+
+```{python}
+df = pd.read_csv("../accepted_only_data.csv")
+df_new = df[~df['home_ownership'].isin(['OTHER', 'ANY', 'NONE'])]
+
 grouped_values_dti = df_new.groupby(['home_ownership', 'application_type', 'hardship_flag'])['dti'].median()
 grouped_values_dti = pd.DataFrame(grouped_values_dti)
 grouped_values_dti.reset_index(inplace=True)
 grouped_values_dti.sort_values(by='dti', ascending=True)
 ```
 
-Many of the accepted candidates with the highest FICO scores own homes and 
+For the top three FICO scores, candidates eithered owned or mortgaged a home. All of the top three filed jointly. The top three lowest dti scores had applicants that rented or owned, filed either individually or jointly, and did or did not have a hardship flag.
 
 # Does an applicant's FICO score change the interest rate they receive? What about the funding-requested ratio?
 
-```{python}
+Okay, let's say you've been approved for a loan. Now, the problem is the interest rate. This will effect how much your monthly payment will be. Thankfully, I can track interest rates. Using the accepted loan applicants, I can find the interest rates people received. Since FICO scores seem to be a widely used metric, I grouped applicants by their FICO score.
 
+```{{python}}
+df = pd.read_csv("../accepted_only_data.csv")
+
+fico_fair_df = df[(df['fico_range_low'] >= 580) & (df['fico_range_low'] <= 669)]
+fico_good_df = df[(df['fico_range_low'] >= 670) & (df['fico_range_low'] <= 739)]
+fico_very_good_df = df[(df['fico_range_low'] >= 740) & (df['fico_range_low'] <= 799)]
+fico_exceptional_df = df[(df['fico_range_low'] >= 800) & (df['fico_range_low'] <= 850)]
+
+fico_fair_df.reset_index(inplace=True)
+fico_good_df.reset_index(inplace=True)
+fico_very_good_df.reset_index(inplace=True)
+fico_exceptional_df.reset_index(inplace=True)
+
+fico_fair_df['fico_category'] = "Fair"
+fico_good_df['fico_category'] = "Good"
+fico_very_good_df['fico_category'] = "Very Good"
+fico_exceptional_df['fico_category'] = "Exceptional"
+
+new_df = pd.concat([fico_fair_df, fico_good_df, fico_very_good_df, fico_exceptional_df], axis=0)
+new_df[['month', 'year']] = new_df['issue_d'].str.split("-", expand=True)
+new_df['issue_d'] = pd.to_datetime(new_df['issue_d'])
+data_two = new_df[new_df['year'] == "2018"]
+grouped_two = data_two.groupby(['issue_d', 'fico_category'])['int_rate'].median()
+ggplot(grouped_two.reset_index(), aes(x='issue_d', y='int_rate', group='fico_category')) + geom_line() + geom_point(color="red", size=3)
 ```
 
 ![Different LendingClub Loan Applications by Month and Year](interestrate.gif)
 
 # Is there a bound to the Debt-To-Income (DTI) ratio so customers below a limit cannot be accepted?
+
+Although you can apply for a loan, you do not necessarily know how your financial status plays a role. DTI or debt-to-income is designed to compare income versus debt. If you have a high ratio, it might be reasonable to assume that you are more unlikely to receive a loan. Let's take a look:
 
 ```{python}
 model_df = pd.read_csv("../model_only_data.csv")
@@ -307,33 +338,82 @@ plt.show()
 
 # Using the matching features between accepted and rejected data, can the data effectively predict whether a candidate will be accepted or rejected?
 
-```{python}
+Using three classification models, I will building an ensemble model to test the ability to predict an applicant's acceptance.
 
+![Model Diagram](ModelChart.png)
+
+```{{python}}
+#| code-fold: false
+
+knn_new = knn(n_neighbors=m.ceil((len(pred_std_train))**(1/2)))
+algorithm_knn = knn_new.fit(pred_std_train, tar_std_train)
+
+clf = LogisticRegression(random_state=42).fit(pred_std_train, tar_std_train)
+
+tree_clf = DecisionTreeClassifier(random_state=42)
+algorithm_tree = tree_clf.fit(pred_std_train, tar_std_train)
+
+voting_clf_best_of_all = VotingClassifier(estimators=[('knn', algorithm_knn), ('lr', clf), ('dt', algorithm_tree)], 
+                                          voting='soft')
+algorithm_ens = voting_clf_best_of_all.fit(pred_std_train, tar_std_train)
+ensemble_hard = algorithm_ens.predict(pred_std_test)
 ```
 
-**Model Equations** to *my* ~~super~~ SUPER awesome `blog` post!
-$$x^2 = 1$$
+**Model Equations**
+
+To test the model's effectiveness, three metrics will be used. Precision, recall, and accuracy.
+
+$$Precision = TP/(TP+FP)$$
+
+$$Recall = TP/(TP+FN)$$
+
+$$Accuracy = (TP+TN)/(TP+FP+TN+FN)$$
+
+
+```{{python}}
+labels = ['True Neg','False Pos','False Neg','True Pos']
+categories = ['Rejected', 'Accepted']
+
+cm_ens = confusion_matrix(tar_std_test, ensemble_hard)
+group_counts = ['{0:0.0f}'.format(value) for value in
+                cm_ens.flatten()]
+labels = [f'{v1}\n{v2}' for v1, v2 in
+          zip(labels,group_counts)]
+labels = np.asarray(labels).reshape(2,2)
+disp_ens = ConfusionMatrixDisplay(confusion_matrix=cm_ens)
+
+plt.figure(figsize=(8,6), dpi=100)
+# Scale up the size of all text
+sns.set(font_scale = 1.1)
+
+ax = sns.heatmap(cm_ens, annot=labels, fmt='', cmap='Oranges')
+# set x-axis label and ticks. 
+ax.set_xlabel("Predicted", fontsize=14, labelpad=20)
+ax.xaxis.set_ticklabels(['Rejected', 'Accepted'])
+
+# set y-axis label and ticks
+ax.set_ylabel("Actual", fontsize=14, labelpad=20)
+ax.yaxis.set_ticklabels(['Rejected', 'Accepted'])
+
+ax.set_title("Confusion Matrix for Loan Applications", fontsize=20, pad=20)
+
+plt.show()
+```
+
+![Ensemble Method Confusion Matrix](results_model.png)
+
+# Conclusions
+
 
 
 ## References
+
+```{python}
+#| label: nlpcode
+#| fig-cap: "NLP"
+```
 
 :::{.callout-note}
 Note that there are five types of callouts, including:
 `note`, `tip`, `warning`, `caution`, and `important`.
 :::
-
-:::{.callout-tip}
-## Tip With Caption
-
-This is an example of a callout with a caption.
-:::
-
-
-For your reference, here's an example of a Python code cell in Quarto, along with a figure that gets generated, along with a caption and a label so that it can be referred to automatically as "Figure 1" (or whatever) in the writeup.
-
-For a demonstration of a line plot on a polar axis, see @fig-polar.
-
-Here's an example of citing a source [see @phil99, pp. 33-35]. Be sure the source information is entered in "BibTeX" form in the `references.bib` file.
-
-
-The bibliography will automatically get generated. Any sources you cite in the document will be included. Other entries in the `.bib` file will not be included.

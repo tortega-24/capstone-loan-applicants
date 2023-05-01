@@ -1,0 +1,1382 @@
+,issue_year,issue_month,reduced_reason,count,month
+100,2008,Jan,Business,9,January
+222,2009,Jan,Business,2,January
+352,2010,Jan,Business,6,January
+484,2011,Jan,Business,30,January
+616,2012,Jan,Business,73,January
+748,2013,Jan,Business,54,January
+874,2014,Jan,Business,143,January
+984,2015,Jan,Business,263,January
+1093,2016,Jan,Business,296,January
+1201,2017,Jan,Business,384,January
+1309,2018,Jan,Business,449,January
+101,2008,Jan,Car,46,January
+223,2009,Jan,Car,49,January
+353,2010,Jan,Car,59,January
+485,2011,Jan,Car,203,January
+617,2012,Jan,Car,449,January
+749,2013,Jan,Car,1272,January
+875,2014,Jan,Car,3624,January
+985,2015,Jan,Car,7753,January
+1094,2016,Jan,Car,7421,January
+1202,2017,Jan,Car,6705,January
+1310,2018,Jan,Car,8134,January
+102,2008,Jan,Debt/Credit Issues,62,January
+224,2009,Jan,Debt/Credit Issues,77,January
+354,2010,Jan,Debt/Credit Issues,159,January
+486,2011,Jan,Debt/Credit Issues,449,January
+618,2012,Jan,Debt/Credit Issues,1029,January
+750,2013,Jan,Debt/Credit Issues,3297,January
+876,2014,Jan,Debt/Credit Issues,8079,January
+986,2015,Jan,Debt/Credit Issues,21212,January
+1095,2016,Jan,Debt/Credit Issues,16059,January
+1203,2017,Jan,Debt/Credit Issues,17231,January
+1311,2018,Jan,Debt/Credit Issues,17187,January
+103,2008,Jan,Home,12,January
+225,2009,Jan,Home,12,January
+355,2010,Jan,Home,31,January
+487,2011,Jan,Home,54,January
+619,2012,Jan,Home,117,January
+751,2013,Jan,Home,314,January
+877,2014,Jan,Home,658,January
+987,2015,Jan,Home,1579,January
+1096,2016,Jan,Home,1713,January
+1204,2017,Jan,Home,2082,January
+1312,2018,Jan,Home,2601,January
+104,2008,Jan,Major Purchase,12,January
+226,2009,Jan,Major Purchase,6,January
+356,2010,Jan,Major Purchase,6,January
+488,2011,Jan,Major Purchase,22,January
+620,2012,Jan,Major Purchase,29,January
+752,2013,Jan,Major Purchase,42,January
+878,2014,Jan,Major Purchase,171,January
+988,2015,Jan,Major Purchase,478,January
+1097,2016,Jan,Major Purchase,533,January
+1205,2017,Jan,Major Purchase,608,January
+1313,2018,Jan,Major Purchase,961,January
+105,2008,Jan,Medical,5,January
+227,2009,Jan,Medical,3,January
+357,2010,Jan,Medical,1,January
+489,2011,Jan,Medical,22,January
+621,2012,Jan,Medical,26,January
+753,2013,Jan,Medical,48,January
+879,2014,Jan,Medical,160,January
+989,2015,Jan,Medical,250,January
+1098,2016,Jan,Medical,299,January
+1206,2017,Jan,Medical,382,January
+1314,2018,Jan,Medical,528,January
+106,2008,Jan,Moving,5,January
+358,2010,Jan,Moving,8,January
+490,2011,Jan,Moving,11,January
+622,2012,Jan,Moving,9,January
+754,2013,Jan,Moving,31,January
+880,2014,Jan,Moving,57,January
+990,2015,Jan,Moving,159,January
+1099,2016,Jan,Moving,165,January
+1207,2017,Jan,Moving,219,January
+1315,2018,Jan,Moving,223,January
+107,2008,Jan,Other,118,January
+228,2009,Jan,Other,91,January
+359,2010,Jan,Other,283,January
+491,2011,Jan,Other,452,January
+623,2012,Jan,Other,598,January
+755,2013,Jan,Other,1329,January
+881,2014,Jan,Other,1365,January
+991,2015,Jan,Other,1434,January
+1100,2016,Jan,Other,1416,January
+1208,2017,Jan,Other,1839,January
+1316,2018,Jan,Other,3057,January
+108,2008,Jan,Student,12,January
+229,2009,Jan,Student,9,January
+360,2010,Jan,Student,10,January
+492,2011,Jan,Student,10,January
+624,2012,Jan,Student,9,January
+756,2013,Jan,Student,21,January
+882,2014,Jan,Student,13,January
+992,2015,Jan,Student,1,January
+109,2008,Jan,Vacation,1,January
+230,2009,Jan,Vacation,1,January
+361,2010,Jan,Vacation,1,January
+493,2011,Jan,Vacation,8,January
+625,2012,Jan,Vacation,14,January
+757,2013,Jan,Vacation,15,January
+883,2014,Jan,Vacation,54,January
+993,2015,Jan,Vacation,138,January
+1101,2016,Jan,Vacation,133,January
+1209,2017,Jan,Vacation,200,January
+1317,2018,Jan,Vacation,201,January
+110,2008,Jan,Wedding,8,January
+231,2009,Jan,Wedding,11,January
+362,2010,Jan,Wedding,16,January
+494,2011,Jan,Wedding,38,January
+626,2012,Jan,Wedding,37,January
+758,2013,Jan,Wedding,54,January
+884,2014,Jan,Wedding,35,January
+89,2008,Feb,Business,13,February
+211,2009,Feb,Business,8,February
+341,2010,Feb,Business,12,February
+473,2011,Feb,Business,26,February
+605,2012,Feb,Business,68,February
+737,2013,Feb,Business,61,February
+864,2014,Feb,Business,131,February
+975,2015,Feb,Business,228,February
+1084,2016,Feb,Business,334,February
+1192,2017,Feb,Business,327,February
+1300,2018,Feb,Business,422,February
+90,2008,Feb,Car,75,February
+212,2009,Feb,Car,46,February
+342,2010,Feb,Car,81,February
+474,2011,Feb,Car,181,February
+606,2012,Feb,Car,466,February
+738,2013,Feb,Car,1468,February
+865,2014,Feb,Car,3837,February
+976,2015,Feb,Car,5494,February
+1085,2016,Feb,Car,8587,February
+1193,2017,Feb,Car,5948,February
+1301,2018,Feb,Car,7146,February
+91,2008,Feb,Debt/Credit Issues,81,February
+213,2009,Feb,Debt/Credit Issues,80,February
+343,2010,Feb,Debt/Credit Issues,181,February
+475,2011,Feb,Debt/Credit Issues,410,February
+607,2012,Feb,Debt/Credit Issues,1022,February
+739,2013,Feb,Debt/Credit Issues,3635,February
+866,2014,Feb,Debt/Credit Issues,8077,February
+977,2015,Feb,Debt/Credit Issues,13828,February
+1086,2016,Feb,Debt/Credit Issues,19529,February
+1194,2017,Feb,Debt/Credit Issues,14531,February
+1302,2018,Feb,Debt/Credit Issues,15329,February
+92,2008,Feb,Home,11,February
+214,2009,Feb,Home,9,February
+344,2010,Feb,Home,29,February
+476,2011,Feb,Home,64,February
+608,2012,Feb,Home,133,February
+740,2013,Feb,Home,322,February
+867,2014,Feb,Home,732,February
+978,2015,Feb,Home,1118,February
+1087,2016,Feb,Home,2206,February
+1195,2017,Feb,Home,1936,February
+1303,2018,Feb,Home,2423,February
+93,2008,Feb,Major Purchase,3,February
+215,2009,Feb,Major Purchase,3,February
+345,2010,Feb,Major Purchase,10,February
+477,2011,Feb,Major Purchase,14,February
+609,2012,Feb,Major Purchase,25,February
+741,2013,Feb,Major Purchase,57,February
+868,2014,Feb,Major Purchase,187,February
+979,2015,Feb,Major Purchase,365,February
+1088,2016,Feb,Major Purchase,723,February
+1196,2017,Feb,Major Purchase,578,February
+1304,2018,Feb,Major Purchase,943,February
+94,2008,Feb,Medical,3,February
+216,2009,Feb,Medical,2,February
+346,2010,Feb,Medical,2,February
+478,2011,Feb,Medical,17,February
+610,2012,Feb,Medical,25,February
+742,2013,Feb,Medical,36,February
+869,2014,Feb,Medical,150,February
+980,2015,Feb,Medical,168,February
+1089,2016,Feb,Medical,381,February
+1197,2017,Feb,Medical,356,February
+1305,2018,Feb,Medical,449,February
+95,2008,Feb,Moving,4,February
+217,2009,Feb,Moving,2,February
+347,2010,Feb,Moving,5,February
+479,2011,Feb,Moving,8,February
+611,2012,Feb,Moving,13,February
+743,2013,Feb,Moving,26,February
+870,2014,Feb,Moving,55,February
+981,2015,Feb,Moving,110,February
+1090,2016,Feb,Moving,193,February
+1198,2017,Feb,Moving,183,February
+1306,2018,Feb,Moving,207,February
+96,2008,Feb,Other,91,February
+218,2009,Feb,Other,126,February
+348,2010,Feb,Other,271,February
+480,2011,Feb,Other,414,February
+612,2012,Feb,Other,556,February
+744,2013,Feb,Other,1447,February
+871,2014,Feb,Other,498,February
+982,2015,Feb,Other,889,February
+1091,2016,Feb,Other,1727,February
+1199,2017,Feb,Other,1625,February
+1307,2018,Feb,Other,2566,February
+97,2008,Feb,Student,8,February
+219,2009,Feb,Student,9,February
+349,2010,Feb,Student,23,February
+481,2011,Feb,Student,7,February
+613,2012,Feb,Student,14,February
+745,2013,Feb,Student,19,February
+98,2008,Feb,Vacation,2,February
+220,2009,Feb,Vacation,1,February
+350,2010,Feb,Vacation,2,February
+482,2011,Feb,Vacation,4,February
+614,2012,Feb,Vacation,11,February
+746,2013,Feb,Vacation,14,February
+872,2014,Feb,Vacation,57,February
+983,2015,Feb,Vacation,91,February
+1092,2016,Feb,Vacation,168,February
+1200,2017,Feb,Vacation,198,February
+1308,2018,Feb,Vacation,190,February
+99,2008,Feb,Wedding,7,February
+221,2009,Feb,Wedding,9,February
+351,2010,Feb,Wedding,12,February
+483,2011,Feb,Wedding,42,February
+615,2012,Feb,Wedding,27,February
+747,2013,Feb,Wedding,63,February
+873,2014,Feb,Wedding,2,February
+131,2008,Mar,Business,14,March
+254,2009,Mar,Business,19,March
+385,2010,Mar,Business,11,March
+517,2011,Mar,Business,36,March
+649,2012,Mar,Business,68,March
+781,2013,Mar,Business,75,March
+903,2014,Mar,Business,158,March
+1012,2015,Mar,Business,215,March
+1120,2016,Mar,Business,608,March
+1228,2017,Mar,Business,400,March
+1336,2018,Mar,Business,423,March
+132,2008,Mar,Car,76,March
+255,2009,Mar,Car,57,March
+386,2010,Mar,Car,96,March
+518,2011,Mar,Car,196,March
+650,2012,Mar,Car,456,March
+782,2013,Mar,Car,1468,March
+904,2014,Mar,Car,4026,March
+1013,2015,Mar,Car,5863,March
+1121,2016,Mar,Car,12559,March
+1229,2017,Mar,Car,7902,March
+1337,2018,Mar,Car,8431,March
+133,2008,Mar,Debt/Credit Issues,109,March
+256,2009,Mar,Debt/Credit Issues,72,March
+387,2010,Mar,Debt/Credit Issues,203,March
+519,2011,Mar,Debt/Credit Issues,405,March
+651,2012,Mar,Debt/Credit Issues,1081,March
+783,2013,Mar,Debt/Credit Issues,3852,March
+905,2014,Mar,Debt/Credit Issues,9242,March
+1014,2015,Mar,Debt/Credit Issues,14574,March
+1122,2016,Mar,Debt/Credit Issues,30654,March
+1230,2017,Mar,Debt/Credit Issues,19279,March
+1338,2018,Mar,Debt/Credit Issues,17796,March
+134,2008,Mar,Home,14,March
+257,2009,Mar,Home,19,March
+388,2010,Mar,Home,43,March
+520,2011,Mar,Home,107,March
+652,2012,Mar,Home,201,March
+784,2013,Mar,Home,481,March
+906,2014,Mar,Home,924,March
+1015,2015,Mar,Home,1469,March
+1123,2016,Mar,Home,4031,March
+1231,2017,Mar,Home,2806,March
+1339,2018,Mar,Home,3244,March
+135,2008,Mar,Major Purchase,6,March
+258,2009,Mar,Major Purchase,9,March
+389,2010,Mar,Major Purchase,7,March
+521,2011,Mar,Major Purchase,19,March
+653,2012,Mar,Major Purchase,41,March
+785,2013,Mar,Major Purchase,77,March
+907,2014,Mar,Major Purchase,242,March
+1016,2015,Mar,Major Purchase,400,March
+1124,2016,Mar,Major Purchase,1306,March
+1232,2017,Mar,Major Purchase,833,March
+1340,2018,Mar,Major Purchase,1097,March
+136,2008,Mar,Medical,3,March
+259,2009,Mar,Medical,3,March
+390,2010,Mar,Medical,3,March
+522,2011,Mar,Medical,14,March
+654,2012,Mar,Medical,24,March
+786,2013,Mar,Medical,43,March
+908,2014,Mar,Medical,138,March
+1017,2015,Mar,Medical,196,March
+1125,2016,Mar,Medical,564,March
+1233,2017,Mar,Medical,478,March
+1341,2018,Mar,Medical,560,March
+137,2008,Mar,Moving,1,March
+260,2009,Mar,Moving,5,March
+391,2010,Mar,Moving,5,March
+523,2011,Mar,Moving,13,March
+655,2012,Mar,Moving,19,March
+787,2013,Mar,Moving,39,March
+909,2014,Mar,Moving,63,March
+1018,2015,Mar,Moving,124,March
+1126,2016,Mar,Moving,315,March
+1234,2017,Mar,Moving,250,March
+1342,2018,Mar,Moving,246,March
+138,2008,Mar,Other,135,March
+261,2009,Mar,Other,111,March
+392,2010,Mar,Other,342,March
+524,2011,Mar,Other,491,March
+656,2012,Mar,Other,740,March
+788,2013,Mar,Other,1651,March
+910,2014,Mar,Other,621,March
+1019,2015,Mar,Other,1071,March
+1127,2016,Mar,Other,3224,March
+1235,2017,Mar,Other,2226,March
+1343,2018,Mar,Other,3148,March
+139,2008,Mar,Student,17,March
+262,2009,Mar,Student,10,March
+393,2010,Mar,Student,20,March
+525,2011,Mar,Student,9,March
+657,2012,Mar,Student,8,March
+789,2013,Mar,Student,21,March
+263,2009,Mar,Vacation,2,March
+394,2010,Mar,Vacation,5,March
+526,2011,Mar,Vacation,11,March
+658,2012,Mar,Vacation,11,March
+790,2013,Mar,Vacation,20,March
+911,2014,Mar,Vacation,61,March
+1020,2015,Mar,Vacation,124,March
+1128,2016,Mar,Vacation,327,March
+1236,2017,Mar,Vacation,313,March
+1344,2018,Mar,Vacation,277,March
+140,2008,Mar,Wedding,12,March
+264,2009,Mar,Wedding,9,March
+395,2010,Mar,Wedding,28,March
+527,2011,Mar,Wedding,49,March
+659,2012,Mar,Wedding,50,March
+791,2013,Mar,Wedding,84,March
+58,2008,Apr,Business,18,April
+178,2009,Apr,Business,17,April
+308,2010,Apr,Business,11,April
+440,2011,Apr,Business,30,April
+572,2012,Apr,Business,71,April
+704,2013,Apr,Business,63,April
+836,2014,Apr,Business,195,April
+948,2015,Apr,Business,275,April
+1057,2016,Apr,Business,354,April
+1165,2017,Apr,Business,301,April
+1273,2018,Apr,Business,417,April
+59,2008,Apr,Car,55,April
+179,2009,Apr,Car,61,April
+309,2010,Apr,Car,104,April
+441,2011,Apr,Car,213,April
+573,2012,Apr,Car,496,April
+705,2013,Apr,Car,1544,April
+837,2014,Apr,Car,4491,April
+949,2015,Apr,Car,7811,April
+1058,2016,Apr,Car,6993,April
+1166,2017,Apr,Car,6065,April
+1274,2018,Apr,Car,9857,April
+60,2008,Apr,Debt/Credit Issues,67,April
+180,2009,Apr,Debt/Credit Issues,50,April
+310,2010,Apr,Debt/Credit Issues,233,April
+442,2011,Apr,Debt/Credit Issues,448,April
+574,2012,Apr,Debt/Credit Issues,1200,April
+706,2013,Apr,Debt/Credit Issues,4323,April
+838,2014,Apr,Debt/Credit Issues,10720,April
+950,2015,Apr,Debt/Credit Issues,20497,April
+1059,2016,Apr,Debt/Credit Issues,17388,April
+1167,2017,Apr,Debt/Credit Issues,15139,April
+1275,2018,Apr,Debt/Credit Issues,19377,April
+61,2008,Apr,Home,8,April
+181,2009,Apr,Home,19,April
+311,2010,Apr,Home,55,April
+443,2011,Apr,Home,126,April
+575,2012,Apr,Home,217,April
+707,2013,Apr,Home,598,April
+839,2014,Apr,Home,1180,April
+951,2015,Apr,Home,2276,April
+1060,2016,Apr,Home,2556,April
+1168,2017,Apr,Home,2609,April
+1276,2018,Apr,Home,3724,April
+62,2008,Apr,Major Purchase,2,April
+182,2009,Apr,Major Purchase,12,April
+312,2010,Apr,Major Purchase,10,April
+444,2011,Apr,Major Purchase,21,April
+576,2012,Apr,Major Purchase,42,April
+708,2013,Apr,Major Purchase,92,April
+840,2014,Apr,Major Purchase,315,April
+952,2015,Apr,Major Purchase,585,April
+1061,2016,Apr,Major Purchase,804,April
+1169,2017,Apr,Major Purchase,684,April
+1277,2018,Apr,Major Purchase,1172,April
+63,2008,Apr,Medical,2,April
+183,2009,Apr,Medical,3,April
+313,2010,Apr,Medical,10,April
+445,2011,Apr,Medical,13,April
+577,2012,Apr,Medical,38,April
+709,2013,Apr,Medical,63,April
+841,2014,Apr,Medical,164,April
+953,2015,Apr,Medical,270,April
+1062,2016,Apr,Medical,354,April
+1170,2017,Apr,Medical,399,April
+1278,2018,Apr,Medical,607,April
+64,2008,Apr,Moving,3,April
+184,2009,Apr,Moving,7,April
+314,2010,Apr,Moving,10,April
+446,2011,Apr,Moving,17,April
+578,2012,Apr,Moving,30,April
+710,2013,Apr,Moving,49,April
+842,2014,Apr,Moving,84,April
+954,2015,Apr,Moving,200,April
+1063,2016,Apr,Moving,251,April
+1171,2017,Apr,Moving,226,April
+1279,2018,Apr,Moving,258,April
+65,2008,Apr,Other,81,April
+185,2009,Apr,Other,128,April
+315,2010,Apr,Other,375,April
+447,2011,Apr,Other,529,April
+579,2012,Apr,Other,866,April
+711,2013,Apr,Other,1958,April
+843,2014,Apr,Other,800,April
+955,2015,Apr,Other,1559,April
+1064,2016,Apr,Other,2312,April
+1172,2017,Apr,Other,1946,April
+1280,2018,Apr,Other,3709,April
+66,2008,Apr,Student,2,April
+186,2009,Apr,Student,11,April
+316,2010,Apr,Student,23,April
+448,2011,Apr,Student,14,April
+580,2012,Apr,Student,13,April
+712,2013,Apr,Student,22,April
+187,2009,Apr,Vacation,1,April
+317,2010,Apr,Vacation,2,April
+449,2011,Apr,Vacation,6,April
+581,2012,Apr,Vacation,10,April
+713,2013,Apr,Vacation,31,April
+844,2014,Apr,Vacation,93,April
+956,2015,Apr,Vacation,166,April
+1065,2016,Apr,Vacation,234,April
+1173,2017,Apr,Vacation,243,April
+1281,2018,Apr,Vacation,304,April
+67,2008,Apr,Wedding,5,April
+188,2009,Apr,Wedding,14,April
+318,2010,Apr,Wedding,36,April
+450,2011,Apr,Wedding,49,April
+582,2012,Apr,Wedding,61,April
+714,2013,Apr,Wedding,108,April
+845,2014,Apr,Wedding,2,April
+141,2008,May,Business,5,May
+265,2009,May,Business,12,May
+396,2010,May,Business,9,May
+528,2011,May,Business,44,May
+660,2012,May,Business,82,May
+792,2013,May,Business,83,May
+912,2014,May,Business,159,May
+1021,2015,May,Business,180,May
+1129,2016,May,Business,332,May
+1237,2017,May,Business,381,May
+1345,2018,May,Business,446,May
+142,2008,May,Car,20,May
+266,2009,May,Car,63,May
+397,2010,May,Car,120,May
+529,2011,May,Car,205,May
+661,2012,May,Car,488,May
+793,2013,May,Car,1768,May
+913,2014,May,Car,4355,May
+1022,2015,May,Car,7223,May
+1130,2016,May,Car,5307,May
+1238,2017,May,Car,7685,May
+1346,2018,May,Car,11305,May
+143,2008,May,Debt/Credit Issues,30,May
+267,2009,May,Debt/Credit Issues,77,May
+398,2010,May,Debt/Credit Issues,236,May
+530,2011,May,Debt/Credit Issues,529,May
+662,2012,May,Debt/Credit Issues,1262,May
+794,2013,May,Debt/Credit Issues,4612,May
+914,2014,May,Debt/Credit Issues,10896,May
+1023,2015,May,Debt/Credit Issues,18696,May
+1131,2016,May,Debt/Credit Issues,13955,May
+1239,2017,May,Debt/Credit Issues,19542,May
+1347,2018,May,Debt/Credit Issues,20794,May
+144,2008,May,Home,5,May
+268,2009,May,Home,25,May
+399,2010,May,Home,59,May
+531,2011,May,Home,162,May
+663,2012,May,Home,247,May
+795,2013,May,Home,644,May
+915,2014,May,Home,1290,May
+1024,2015,May,Home,1912,May
+1132,2016,May,Home,2064,May
+1240,2017,May,Home,3251,May
+1348,2018,May,Home,3845,May
+145,2008,May,Major Purchase,2,May
+269,2009,May,Major Purchase,9,May
+400,2010,May,Major Purchase,6,May
+532,2011,May,Major Purchase,41,May
+664,2012,May,Major Purchase,38,May
+796,2013,May,Major Purchase,75,May
+916,2014,May,Major Purchase,340,May
+1025,2015,May,Major Purchase,475,May
+1133,2016,May,Major Purchase,629,May
+1241,2017,May,Major Purchase,864,May
+1349,2018,May,Major Purchase,1246,May
+146,2008,May,Medical,2,May
+270,2009,May,Medical,5,May
+401,2010,May,Medical,12,May
+533,2011,May,Medical,21,May
+665,2012,May,Medical,44,May
+797,2013,May,Medical,57,May
+917,2014,May,Medical,215,May
+1026,2015,May,Medical,256,May
+1134,2016,May,Medical,318,May
+1242,2017,May,Medical,552,May
+1350,2018,May,Medical,625,May
+147,2008,May,Moving,1,May
+271,2009,May,Moving,2,May
+402,2010,May,Moving,14,May
+534,2011,May,Moving,18,May
+666,2012,May,Moving,21,May
+798,2013,May,Moving,55,May
+918,2014,May,Moving,98,May
+1027,2015,May,Moving,184,May
+1135,2016,May,Moving,187,May
+1243,2017,May,Moving,327,May
+1351,2018,May,Moving,321,May
+148,2008,May,Other,39,May
+272,2009,May,Other,120,May
+403,2010,May,Other,420,May
+535,2011,May,Other,516,May
+667,2012,May,Other,919,May
+799,2013,May,Other,2136,May
+919,2014,May,Other,760,May
+1028,2015,May,Other,1192,May
+1136,2016,May,Other,1676,May
+1244,2017,May,Other,2235,May
+1352,2018,May,Other,3605,May
+149,2008,May,Student,4,May
+273,2009,May,Student,21,May
+404,2010,May,Student,26,May
+536,2011,May,Student,6,May
+668,2012,May,Student,8,May
+800,2013,May,Student,23,May
+150,2008,May,Vacation,1,May
+405,2010,May,Vacation,9,May
+537,2011,May,Vacation,17,May
+669,2012,May,Vacation,25,May
+801,2013,May,Vacation,53,May
+920,2014,May,Vacation,85,May
+1029,2015,May,Vacation,175,May
+1137,2016,May,Vacation,221,May
+1245,2017,May,Vacation,384,May
+1353,2018,May,Vacation,352,May
+151,2008,May,Wedding,4,May
+274,2009,May,Wedding,10,May
+406,2010,May,Wedding,26,May
+538,2011,May,Wedding,32,May
+670,2012,May,Wedding,77,May
+802,2013,May,Wedding,110,May
+121,2008,Jun,Business,3,June
+243,2009,Jun,Business,15,June
+374,2010,Jun,Business,9,June
+506,2011,Jun,Business,34,June
+638,2012,Jun,Business,71,June
+770,2013,Jun,Business,75,June
+894,2014,Jun,Business,160,June
+1003,2015,Jun,Business,224,June
+1111,2016,Jun,Business,322,June
+1219,2017,Jun,Business,321,June
+1327,2018,Jun,Business,330,June
+27,2007,Jun,Car,5,June
+122,2008,Jun,Car,31,June
+244,2009,Jun,Car,67,June
+375,2010,Jun,Car,111,June
+507,2011,Jun,Car,236,June
+639,2012,Jun,Car,595,June
+771,2013,Jun,Car,1815,June
+895,2014,Jun,Car,4036,June
+1004,2015,Jun,Car,6380,June
+1112,2016,Jun,Car,6195,June
+1220,2017,Jun,Car,7439,June
+1328,2018,Jun,Car,10732,June
+28,2007,Jun,Debt/Credit Issues,3,June
+123,2008,Jun,Debt/Credit Issues,23,June
+245,2009,Jun,Debt/Credit Issues,80,June
+376,2010,Jun,Debt/Credit Issues,277,June
+508,2011,Jun,Debt/Credit Issues,582,June
+640,2012,Jun,Debt/Credit Issues,1584,June
+772,2013,Jun,Debt/Credit Issues,4936,June
+896,2014,Jun,Debt/Credit Issues,9799,June
+1005,2015,Jun,Debt/Credit Issues,16603,June
+1113,2016,Jun,Debt/Credit Issues,16221,June
+1221,2017,Jun,Debt/Credit Issues,20253,June
+1329,2018,Jun,Debt/Credit Issues,18629,June
+29,2007,Jun,Home,1,June
+124,2008,Jun,Home,5,June
+246,2009,Jun,Home,35,June
+377,2010,Jun,Home,76,June
+509,2011,Jun,Home,172,June
+641,2012,Jun,Home,260,June
+773,2013,Jun,Home,700,June
+897,2014,Jun,Home,1058,June
+1006,2015,Jun,Home,1715,June
+1114,2016,Jun,Home,2711,June
+1222,2017,Jun,Home,3087,June
+1330,2018,Jun,Home,3187,June
+125,2008,Jun,Major Purchase,2,June
+247,2009,Jun,Major Purchase,12,June
+378,2010,Jun,Major Purchase,14,June
+510,2011,Jun,Major Purchase,30,June
+642,2012,Jun,Major Purchase,38,June
+774,2013,Jun,Major Purchase,78,June
+898,2014,Jun,Major Purchase,282,June
+1007,2015,Jun,Major Purchase,445,June
+1115,2016,Jun,Major Purchase,873,June
+1223,2017,Jun,Major Purchase,911,June
+1331,2018,Jun,Major Purchase,1067,June
+248,2009,Jun,Medical,7,June
+379,2010,Jun,Medical,8,June
+511,2011,Jun,Medical,22,June
+643,2012,Jun,Medical,32,June
+775,2013,Jun,Medical,77,June
+899,2014,Jun,Medical,147,June
+1008,2015,Jun,Medical,202,June
+1116,2016,Jun,Medical,427,June
+1224,2017,Jun,Medical,554,June
+1332,2018,Jun,Medical,510,June
+30,2007,Jun,Moving,1,June
+126,2008,Jun,Moving,1,June
+249,2009,Jun,Moving,3,June
+380,2010,Jun,Moving,15,June
+512,2011,Jun,Moving,19,June
+644,2012,Jun,Moving,36,June
+776,2013,Jun,Moving,59,June
+900,2014,Jun,Moving,87,June
+1009,2015,Jun,Moving,185,June
+1117,2016,Jun,Moving,292,June
+1225,2017,Jun,Moving,329,June
+1333,2018,Jun,Moving,267,June
+31,2007,Jun,Other,6,June
+127,2008,Jun,Other,38,June
+250,2009,Jun,Other,130,June
+381,2010,Jun,Other,470,June
+513,2011,Jun,Other,533,June
+645,2012,Jun,Other,860,June
+777,2013,Jun,Other,2288,June
+901,2014,Jun,Other,719,June
+1010,2015,Jun,Other,1139,June
+1118,2016,Jun,Other,2116,June
+1226,2017,Jun,Other,2459,June
+1334,2018,Jun,Other,3051,June
+32,2007,Jun,Student,1,June
+128,2008,Jun,Student,2,June
+251,2009,Jun,Student,27,June
+382,2010,Jun,Student,15,June
+514,2011,Jun,Student,8,June
+646,2012,Jun,Student,13,June
+778,2013,Jun,Student,26,June
+33,2007,Jun,Vacation,1,June
+129,2008,Jun,Vacation,3,June
+252,2009,Jun,Vacation,1,June
+383,2010,Jun,Vacation,11,June
+515,2011,Jun,Vacation,18,June
+647,2012,Jun,Vacation,32,June
+779,2013,Jun,Vacation,55,June
+902,2014,Jun,Vacation,113,June
+1011,2015,Jun,Vacation,162,June
+1119,2016,Jun,Vacation,241,June
+1227,2017,Jun,Vacation,452,June
+1335,2018,Jun,Vacation,339,June
+34,2007,Jun,Wedding,1,June
+130,2008,Jun,Wedding,8,June
+253,2009,Jun,Wedding,16,June
+384,2010,Jun,Wedding,36,June
+516,2011,Jun,Wedding,60,June
+648,2012,Jun,Wedding,81,June
+780,2013,Jun,Wedding,89,June
+19,2007,Jul,Business,1,July
+111,2008,Jul,Business,4,July
+232,2009,Jul,Business,9,July
+363,2010,Jul,Business,13,July
+495,2011,Jul,Business,42,July
+627,2012,Jul,Business,91,July
+759,2013,Jul,Business,79,July
+885,2014,Jul,Business,254,July
+994,2015,Jul,Business,283,July
+1102,2016,Jul,Business,324,July
+1210,2017,Jul,Business,354,July
+1318,2018,Jul,Business,288,July
+20,2007,Jul,Car,17,July
+112,2008,Jul,Car,29,July
+233,2009,Jul,Car,94,July
+364,2010,Jul,Car,160,July
+496,2011,Jul,Car,257,July
+628,2012,Jul,Car,737,July
+760,2013,Jul,Car,1900,July
+886,2014,Jul,Car,6458,July
+995,2015,Jul,Car,11031,July
+1103,2016,Jul,Car,6220,July
+1211,2017,Jul,Car,7796,July
+1319,2018,Jul,Car,11505,July
+21,2007,Jul,Debt/Credit Issues,7,July
+113,2008,Jul,Debt/Credit Issues,26,July
+234,2009,Jul,Debt/Credit Issues,96,July
+365,2010,Jul,Debt/Credit Issues,310,July
+497,2011,Jul,Debt/Credit Issues,597,July
+629,2012,Jul,Debt/Credit Issues,1975,July
+761,2013,Jul,Debt/Credit Issues,5454,July
+887,2014,Jul,Debt/Credit Issues,17507,July
+996,2015,Jul,Debt/Credit Issues,25774,July
+1104,2016,Jul,Debt/Credit Issues,18167,July
+1212,2017,Jul,Debt/Credit Issues,20824,July
+1320,2018,Jul,Debt/Credit Issues,21389,July
+22,2007,Jul,Home,3,July
+114,2008,Jul,Home,7,July
+235,2009,Jul,Home,32,July
+366,2010,Jul,Home,52,July
+498,2011,Jul,Home,162,July
+630,2012,Jul,Home,267,July
+762,2013,Jul,Home,694,July
+888,2014,Jul,Home,1665,July
+997,2015,Jul,Home,2817,July
+1105,2016,Jul,Home,2485,July
+1213,2017,Jul,Home,3090,July
+1321,2018,Jul,Home,2690,July
+115,2008,Jul,Major Purchase,1,July
+236,2009,Jul,Major Purchase,7,July
+367,2010,Jul,Major Purchase,17,July
+499,2011,Jul,Major Purchase,29,July
+631,2012,Jul,Major Purchase,56,July
+763,2013,Jul,Major Purchase,115,July
+889,2014,Jul,Major Purchase,433,July
+998,2015,Jul,Major Purchase,730,July
+1106,2016,Jul,Major Purchase,754,July
+1214,2017,Jul,Major Purchase,926,July
+1322,2018,Jul,Major Purchase,741,July
+116,2008,Jul,Medical,2,July
+237,2009,Jul,Medical,6,July
+368,2010,Jul,Medical,9,July
+500,2011,Jul,Medical,26,July
+632,2012,Jul,Medical,63,July
+764,2013,Jul,Medical,61,July
+890,2014,Jul,Medical,265,July
+999,2015,Jul,Medical,399,July
+1107,2016,Jul,Medical,376,July
+1215,2017,Jul,Medical,538,July
+1323,2018,Jul,Medical,455,July
+23,2007,Jul,Moving,1,July
+117,2008,Jul,Moving,5,July
+238,2009,Jul,Moving,2,July
+369,2010,Jul,Moving,27,July
+501,2011,Jul,Moving,25,July
+633,2012,Jul,Moving,26,July
+765,2013,Jul,Moving,80,July
+891,2014,Jul,Moving,168,July
+1000,2015,Jul,Moving,298,July
+1108,2016,Jul,Moving,293,July
+1216,2017,Jul,Moving,354,July
+1324,2018,Jul,Moving,232,July
+24,2007,Jul,Other,18,July
+118,2008,Jul,Other,47,July
+239,2009,Jul,Other,111,July
+370,2010,Jul,Other,507,July
+502,2011,Jul,Other,529,July
+634,2012,Jul,Other,1040,July
+766,2013,Jul,Other,2527,July
+892,2014,Jul,Other,1169,July
+1001,2015,Jul,Other,1828,July
+1109,2016,Jul,Other,2281,July
+1217,2017,Jul,Other,2600,July
+1325,2018,Jul,Other,2148,July
+25,2007,Jul,Student,5,July
+119,2008,Jul,Student,8,July
+240,2009,Jul,Student,20,July
+371,2010,Jul,Student,11,July
+503,2011,Jul,Student,10,July
+635,2012,Jul,Student,16,July
+767,2013,Jul,Student,35,July
+241,2009,Jul,Vacation,1,July
+372,2010,Jul,Vacation,3,July
+504,2011,Jul,Vacation,15,July
+636,2012,Jul,Vacation,35,July
+768,2013,Jul,Vacation,59,July
+893,2014,Jul,Vacation,174,July
+1002,2015,Jul,Vacation,314,July
+1110,2016,Jul,Vacation,323,July
+1218,2017,Jul,Vacation,404,July
+1326,2018,Jul,Vacation,296,July
+26,2007,Jul,Wedding,1,July
+120,2008,Jul,Wedding,6,July
+242,2009,Jul,Wedding,18,July
+373,2010,Jul,Wedding,35,July
+505,2011,Jul,Wedding,53,July
+637,2012,Jul,Wedding,92,July
+769,2013,Jul,Wedding,116,July
+0,2007,Aug,Business,1,August
+68,2008,Aug,Business,6,August
+189,2009,Aug,Business,12,August
+319,2010,Aug,Business,10,August
+451,2011,Aug,Business,57,August
+583,2012,Aug,Business,97,August
+715,2013,Aug,Business,89,August
+846,2014,Aug,Business,152,August
+957,2015,Aug,Business,270,August
+1066,2016,Aug,Business,323,August
+1174,2017,Aug,Business,441,August
+1282,2018,Aug,Business,283,August
+1,2007,Aug,Car,19,August
+69,2008,Aug,Car,17,August
+190,2009,Aug,Car,93,August
+320,2010,Aug,Car,169,August
+452,2011,Aug,Car,258,August
+584,2012,Aug,Car,875,August
+716,2013,Aug,Car,2032,August
+847,2014,Aug,Car,3925,August
+958,2015,Aug,Car,8866,August
+1067,2016,Aug,Car,6588,August
+1175,2017,Aug,Car,8548,August
+1283,2018,Aug,Car,11593,August
+2,2007,Aug,Debt/Credit Issues,9,August
+70,2008,Aug,Debt/Credit Issues,14,August
+191,2009,Aug,Debt/Credit Issues,128,August
+321,2010,Aug,Debt/Credit Issues,322,August
+453,2011,Aug,Debt/Credit Issues,689,August
+585,2012,Aug,Debt/Credit Issues,2292,August
+717,2013,Aug,Debt/Credit Issues,5732,August
+848,2014,Aug,Debt/Credit Issues,11207,August
+959,2015,Aug,Debt/Credit Issues,19533,August
+1068,2016,Aug,Debt/Credit Issues,18589,August
+1176,2017,Aug,Debt/Credit Issues,22812,August
+1284,2018,Aug,Debt/Credit Issues,22164,August
+3,2007,Aug,Home,4,August
+71,2008,Aug,Home,4,August
+192,2009,Aug,Home,19,August
+322,2010,Aug,Home,69,August
+454,2011,Aug,Home,124,August
+586,2012,Aug,Home,288,August
+718,2013,Aug,Home,694,August
+849,2014,Aug,Home,1034,August
+960,2015,Aug,Home,2082,August
+1069,2016,Aug,Home,2433,August
+1177,2017,Aug,Home,3280,August
+1285,2018,Aug,Home,2823,August
+72,2008,Aug,Major Purchase,2,August
+193,2009,Aug,Major Purchase,10,August
+323,2010,Aug,Major Purchase,9,August
+455,2011,Aug,Major Purchase,32,August
+587,2012,Aug,Major Purchase,60,August
+719,2013,Aug,Major Purchase,114,August
+850,2014,Aug,Major Purchase,323,August
+961,2015,Aug,Major Purchase,632,August
+1070,2016,Aug,Major Purchase,810,August
+1178,2017,Aug,Major Purchase,1066,August
+1286,2018,Aug,Major Purchase,757,August
+73,2008,Aug,Medical,3,August
+194,2009,Aug,Medical,5,August
+324,2010,Aug,Medical,11,August
+456,2011,Aug,Medical,23,August
+588,2012,Aug,Medical,46,August
+720,2013,Aug,Medical,110,August
+851,2014,Aug,Medical,160,August
+962,2015,Aug,Medical,291,August
+1071,2016,Aug,Medical,338,August
+1179,2017,Aug,Medical,618,August
+1287,2018,Aug,Medical,416,August
+4,2007,Aug,Moving,2,August
+74,2008,Aug,Moving,3,August
+195,2009,Aug,Moving,9,August
+325,2010,Aug,Moving,16,August
+457,2011,Aug,Moving,32,August
+589,2012,Aug,Moving,41,August
+721,2013,Aug,Moving,78,August
+852,2014,Aug,Moving,129,August
+963,2015,Aug,Moving,191,August
+1072,2016,Aug,Moving,294,August
+1180,2017,Aug,Moving,360,August
+1288,2018,Aug,Moving,271,August
+5,2007,Aug,Other,18,August
+75,2008,Aug,Other,35,August
+196,2009,Aug,Other,127,August
+326,2010,Aug,Other,471,August
+458,2011,Aug,Other,522,August
+590,2012,Aug,Other,1260,August
+722,2013,Aug,Other,2786,August
+853,2014,Aug,Other,847,August
+964,2015,Aug,Other,1483,August
+1073,2016,Aug,Other,2398,August
+1181,2017,Aug,Other,2952,August
+1289,2018,Aug,Other,2321,August
+6,2007,Aug,Student,9,August
+76,2008,Aug,Student,9,August
+197,2009,Aug,Student,16,August
+327,2010,Aug,Student,9,August
+459,2011,Aug,Student,11,August
+591,2012,Aug,Student,14,August
+723,2013,Aug,Student,46,August
+7,2007,Aug,Vacation,1,August
+77,2008,Aug,Vacation,1,August
+198,2009,Aug,Vacation,2,August
+328,2010,Aug,Vacation,7,August
+460,2011,Aug,Vacation,16,August
+592,2012,Aug,Vacation,27,August
+724,2013,Aug,Vacation,57,August
+854,2014,Aug,Vacation,100,August
+965,2015,Aug,Vacation,178,August
+1074,2016,Aug,Vacation,285,August
+1182,2017,Aug,Vacation,427,August
+1290,2018,Aug,Vacation,261,August
+8,2007,Aug,Wedding,2,August
+78,2008,Aug,Wedding,3,August
+199,2009,Aug,Wedding,15,August
+329,2010,Aug,Wedding,35,August
+461,2011,Aug,Wedding,53,August
+593,2012,Aug,Wedding,100,August
+725,2013,Aug,Wedding,138,August
+51,2007,Sep,Business,2,September
+171,2008,Sep,Business,6,September
+297,2009,Sep,Business,14,September
+429,2010,Sep,Business,27,September
+561,2011,Sep,Business,59,September
+693,2012,Sep,Business,75,September
+825,2013,Sep,Business,116,September
+939,2014,Sep,Business,92,September
+1048,2015,Sep,Business,226,September
+1156,2016,Sep,Business,315,September
+1264,2017,Sep,Business,424,September
+1372,2018,Sep,Business,241,September
+52,2007,Sep,Car,10,September
+172,2008,Sep,Car,20,September
+298,2009,Sep,Car,100,September
+430,2010,Sep,Car,122,September
+562,2011,Sep,Car,268,September
+694,2012,Sep,Car,1009,September
+826,2013,Sep,Car,2220,September
+940,2014,Sep,Car,2436,September
+1049,2015,Sep,Car,6927,September
+1157,2016,Sep,Car,5059,September
+1265,2017,Sep,Car,7258,September
+1373,2018,Sep,Car,9804,September
+53,2007,Sep,Debt/Credit Issues,14,September
+173,2008,Sep,Debt/Credit Issues,10,September
+299,2009,Sep,Debt/Credit Issues,129,September
+431,2010,Sep,Debt/Credit Issues,318,September
+563,2011,Sep,Debt/Credit Issues,762,September
+695,2012,Sep,Debt/Credit Issues,2698,September
+827,2013,Sep,Debt/Credit Issues,6043,September
+941,2014,Sep,Debt/Credit Issues,5950,September
+1050,2015,Sep,Debt/Credit Issues,15796,September
+1158,2016,Sep,Debt/Credit Issues,14448,September
+1266,2017,Sep,Debt/Credit Issues,20857,September
+1374,2018,Sep,Debt/Credit Issues,18926,September
+54,2007,Sep,Home,2,September
+174,2008,Sep,Home,2,September
+300,2009,Sep,Home,34,September
+432,2010,Sep,Home,79,September
+564,2011,Sep,Home,137,September
+696,2012,Sep,Home,303,September
+828,2013,Sep,Home,690,September
+942,2014,Sep,Home,617,September
+1051,2015,Sep,Home,1832,September
+1159,2016,Sep,Home,2021,September
+1267,2017,Sep,Home,3142,September
+1375,2018,Sep,Home,2145,September
+55,2007,Sep,Major Purchase,1,September
+301,2009,Sep,Major Purchase,11,September
+433,2010,Sep,Major Purchase,12,September
+565,2011,Sep,Major Purchase,40,September
+697,2012,Sep,Major Purchase,56,September
+829,2013,Sep,Major Purchase,93,September
+943,2014,Sep,Major Purchase,196,September
+1052,2015,Sep,Major Purchase,503,September
+1160,2016,Sep,Major Purchase,674,September
+1268,2017,Sep,Major Purchase,925,September
+1376,2018,Sep,Major Purchase,591,September
+302,2009,Sep,Medical,3,September
+434,2010,Sep,Medical,17,September
+566,2011,Sep,Medical,38,September
+698,2012,Sep,Medical,67,September
+830,2013,Sep,Medical,82,September
+944,2014,Sep,Medical,121,September
+1053,2015,Sep,Medical,251,September
+1161,2016,Sep,Medical,352,September
+1269,2017,Sep,Medical,570,September
+1377,2018,Sep,Medical,328,September
+303,2009,Sep,Moving,10,September
+435,2010,Sep,Moving,21,September
+567,2011,Sep,Moving,20,September
+699,2012,Sep,Moving,44,September
+831,2013,Sep,Moving,83,September
+945,2014,Sep,Moving,84,September
+1054,2015,Sep,Moving,159,September
+1162,2016,Sep,Moving,229,September
+1270,2017,Sep,Moving,304,September
+1378,2018,Sep,Moving,203,September
+56,2007,Sep,Other,17,September
+175,2008,Sep,Other,12,September
+304,2009,Sep,Other,162,September
+436,2010,Sep,Other,475,September
+568,2011,Sep,Other,533,September
+700,2012,Sep,Other,1367,September
+832,2013,Sep,Other,2727,September
+946,2014,Sep,Other,526,September
+1055,2015,Sep,Other,1229,September
+1163,2016,Sep,Other,1904,September
+1271,2017,Sep,Other,2735,September
+1379,2018,Sep,Other,1677,September
+57,2007,Sep,Student,3,September
+176,2008,Sep,Student,1,September
+305,2009,Sep,Student,17,September
+437,2010,Sep,Student,13,September
+569,2011,Sep,Student,6,September
+701,2012,Sep,Student,19,September
+833,2013,Sep,Student,35,September
+306,2009,Sep,Vacation,3,September
+438,2010,Sep,Vacation,6,September
+570,2011,Sep,Vacation,11,September
+702,2012,Sep,Vacation,31,September
+834,2013,Sep,Vacation,57,September
+947,2014,Sep,Vacation,49,September
+1056,2015,Sep,Vacation,126,September
+1164,2016,Sep,Vacation,189,September
+1272,2017,Sep,Vacation,270,September
+1380,2018,Sep,Vacation,190,September
+177,2008,Sep,Wedding,3,September
+307,2009,Sep,Wedding,12,September
+439,2010,Sep,Wedding,33,September
+571,2011,Sep,Wedding,61,September
+703,2012,Sep,Wedding,102,September
+835,2013,Sep,Wedding,114,September
+43,2007,Oct,Business,6,October
+162,2008,Oct,Business,3,October
+286,2009,Oct,Business,10,October
+418,2010,Oct,Business,14,October
+550,2011,Oct,Business,60,October
+682,2012,Oct,Business,80,October
+814,2013,Oct,Business,85,October
+930,2014,Oct,Business,323,October
+1039,2015,Oct,Business,351,October
+1147,2016,Oct,Business,351,October
+1255,2017,Oct,Business,424,October
+1363,2018,Oct,Business,214,October
+44,2007,Oct,Car,18,October
+163,2008,Oct,Car,21,October
+287,2009,Oct,Car,70,October
+419,2010,Oct,Car,155,October
+551,2011,Oct,Car,300,October
+683,2012,Oct,Car,990,October
+815,2013,Oct,Car,2467,October
+931,2014,Oct,Car,8526,October
+1040,2015,Oct,Car,12040,October
+1148,2016,Oct,Car,6281,October
+1256,2017,Oct,Car,7482,October
+1364,2018,Oct,Car,11166,October
+45,2007,Oct,Debt/Credit Issues,15,October
+164,2008,Oct,Debt/Credit Issues,25,October
+288,2009,Oct,Debt/Credit Issues,137,October
+420,2010,Oct,Debt/Credit Issues,384,October
+552,2011,Oct,Debt/Credit Issues,772,October
+684,2012,Oct,Debt/Credit Issues,2830,October
+816,2013,Oct,Debt/Credit Issues,6550,October
+932,2014,Oct,Debt/Credit Issues,23142,October
+1041,2015,Oct,Debt/Credit Issues,26480,October
+1149,2016,Oct,Debt/Credit Issues,17771,October
+1257,2017,Oct,Debt/Credit Issues,19103,October
+1365,2018,Oct,Debt/Credit Issues,21523,October
+46,2007,Oct,Home,2,October
+165,2008,Oct,Home,4,October
+289,2009,Oct,Home,46,October
+421,2010,Oct,Home,73,October
+553,2011,Oct,Home,141,October
+685,2012,Oct,Home,274,October
+817,2013,Oct,Home,684,October
+933,2014,Oct,Home,1850,October
+1042,2015,Oct,Home,3041,October
+1150,2016,Oct,Home,2469,October
+1258,2017,Oct,Home,3112,October
+1366,2018,Oct,Home,2532,October
+166,2008,Oct,Major Purchase,4,October
+290,2009,Oct,Major Purchase,6,October
+422,2010,Oct,Major Purchase,12,October
+554,2011,Oct,Major Purchase,30,October
+686,2012,Oct,Major Purchase,56,October
+818,2013,Oct,Major Purchase,93,October
+934,2014,Oct,Major Purchase,543,October
+1043,2015,Oct,Major Purchase,804,October
+1151,2016,Oct,Major Purchase,739,October
+1259,2017,Oct,Major Purchase,867,October
+1367,2018,Oct,Major Purchase,658,October
+291,2009,Oct,Medical,8,October
+423,2010,Oct,Medical,10,October
+555,2011,Oct,Medical,32,October
+687,2012,Oct,Medical,61,October
+819,2013,Oct,Medical,91,October
+935,2014,Oct,Medical,322,October
+1044,2015,Oct,Medical,464,October
+1152,2016,Oct,Medical,434,October
+1260,2017,Oct,Medical,573,October
+1368,2018,Oct,Medical,410,October
+47,2007,Oct,Moving,1,October
+292,2009,Oct,Moving,7,October
+424,2010,Oct,Moving,14,October
+556,2011,Oct,Moving,21,October
+688,2012,Oct,Moving,46,October
+820,2013,Oct,Moving,65,October
+936,2014,Oct,Moving,236,October
+1045,2015,Oct,Moving,228,October
+1153,2016,Oct,Moving,251,October
+1261,2017,Oct,Moving,264,October
+1369,2018,Oct,Moving,207,October
+48,2007,Oct,Other,47,October
+167,2008,Oct,Other,49,October
+293,2009,Oct,Other,245,October
+425,2010,Oct,Other,430,October
+557,2011,Oct,Other,534,October
+689,2012,Oct,Other,1430,October
+821,2013,Oct,Other,3000,October
+937,2014,Oct,Other,1615,October
+1046,2015,Oct,Other,2072,October
+1154,2016,Oct,Other,2193,October
+1262,2017,Oct,Other,3057,October
+1370,2018,Oct,Other,2000,October
+49,2007,Oct,Student,8,October
+168,2008,Oct,Student,6,October
+294,2009,Oct,Student,19,October
+426,2010,Oct,Student,7,October
+558,2011,Oct,Student,8,October
+690,2012,Oct,Student,20,October
+822,2013,Oct,Student,29,October
+169,2008,Oct,Vacation,1,October
+295,2009,Oct,Vacation,2,October
+427,2010,Oct,Vacation,8,October
+559,2011,Oct,Vacation,14,October
+691,2012,Oct,Vacation,38,October
+823,2013,Oct,Vacation,46,October
+938,2014,Oct,Vacation,147,October
+1047,2015,Oct,Vacation,203,October
+1155,2016,Oct,Vacation,218,October
+1263,2017,Oct,Vacation,240,October
+1371,2018,Oct,Vacation,225,October
+50,2007,Oct,Wedding,2,October
+170,2008,Oct,Wedding,4,October
+296,2009,Oct,Wedding,13,October
+428,2010,Oct,Wedding,38,October
+560,2011,Oct,Wedding,48,October
+692,2012,Oct,Wedding,74,October
+824,2013,Oct,Wedding,76,October
+35,2007,Nov,Business,8,November
+152,2008,Nov,Business,14,November
+275,2009,Nov,Business,9,November
+407,2010,Nov,Business,20,November
+539,2011,Nov,Business,54,November
+671,2012,Nov,Business,77,November
+803,2013,Nov,Business,99,November
+921,2014,Nov,Business,216,November
+1030,2015,Nov,Business,275,November
+1138,2016,Nov,Business,340,November
+1246,2017,Nov,Business,513,November
+1354,2018,Nov,Business,196,November
+36,2007,Nov,Car,15,November
+153,2008,Nov,Car,39,November
+276,2009,Nov,Car,56,November
+408,2010,Nov,Car,166,November
+540,2011,Nov,Car,344,November
+672,2012,Nov,Car,1025,November
+804,2013,Nov,Car,2861,November
+922,2014,Nov,Car,5463,November
+1031,2015,Nov,Car,9130,November
+1139,2016,Nov,Car,6926,November
+1247,2017,Nov,Car,9012,November
+1355,2018,Nov,Car,10147,November
+37,2007,Nov,Debt/Credit Issues,22,November
+154,2008,Nov,Debt/Credit Issues,42,November
+277,2009,Nov,Debt/Credit Issues,155,November
+409,2010,Nov,Debt/Credit Issues,333,November
+541,2011,Nov,Debt/Credit Issues,833,November
+673,2012,Nov,Debt/Credit Issues,2897,November
+805,2013,Nov,Debt/Credit Issues,6735,November
+923,2014,Nov,Debt/Credit Issues,14818,November
+1032,2015,Nov,Debt/Credit Issues,20172,November
+1140,2016,Nov,Debt/Credit Issues,18861,November
+1248,2017,Nov,Debt/Credit Issues,20353,November
+1356,2018,Nov,Debt/Credit Issues,19375,November
+38,2007,Nov,Home,6,November
+155,2008,Nov,Home,14,November
+278,2009,Nov,Home,39,November
+410,2010,Nov,Home,78,November
+542,2011,Nov,Home,125,November
+674,2012,Nov,Home,284,November
+806,2013,Nov,Home,615,November
+924,2014,Nov,Home,1239,November
+1033,2015,Nov,Home,2398,November
+1141,2016,Nov,Home,2328,November
+1249,2017,Nov,Home,3305,November
+1357,2018,Nov,Home,2147,November
+156,2008,Nov,Major Purchase,6,November
+279,2009,Nov,Major Purchase,10,November
+411,2010,Nov,Major Purchase,23,November
+543,2011,Nov,Major Purchase,20,November
+675,2012,Nov,Major Purchase,52,November
+807,2013,Nov,Major Purchase,97,November
+925,2014,Nov,Major Purchase,352,November
+1034,2015,Nov,Major Purchase,694,November
+1142,2016,Nov,Major Purchase,723,November
+1250,2017,Nov,Major Purchase,994,November
+1358,2018,Nov,Major Purchase,638,November
+39,2007,Nov,Medical,2,November
+157,2008,Nov,Medical,1,November
+280,2009,Nov,Medical,2,November
+412,2010,Nov,Medical,15,November
+544,2011,Nov,Medical,33,November
+676,2012,Nov,Medical,67,November
+808,2013,Nov,Medical,106,November
+926,2014,Nov,Medical,212,November
+1035,2015,Nov,Medical,376,November
+1143,2016,Nov,Medical,447,November
+1251,2017,Nov,Medical,585,November
+1359,2018,Nov,Medical,410,November
+158,2008,Nov,Moving,5,November
+281,2009,Nov,Moving,8,November
+413,2010,Nov,Moving,11,November
+545,2011,Nov,Moving,17,November
+677,2012,Nov,Moving,33,November
+809,2013,Nov,Moving,67,November
+927,2014,Nov,Moving,115,November
+1036,2015,Nov,Moving,197,November
+1144,2016,Nov,Moving,225,November
+1252,2017,Nov,Moving,288,November
+1360,2018,Nov,Moving,164,November
+40,2007,Nov,Other,36,November
+159,2008,Nov,Other,61,November
+282,2009,Nov,Other,271,November
+414,2010,Nov,Other,466,November
+546,2011,Nov,Other,558,November
+678,2012,Nov,Other,1417,November
+810,2013,Nov,Other,3033,November
+928,2014,Nov,Other,1113,November
+1037,2015,Nov,Other,1777,November
+1145,2016,Nov,Other,2220,November
+1253,2017,Nov,Other,3428,November
+1361,2018,Nov,Other,1868,November
+41,2007,Nov,Student,9,November
+160,2008,Nov,Student,13,November
+283,2009,Nov,Student,21,November
+415,2010,Nov,Student,9,November
+547,2011,Nov,Student,8,November
+679,2012,Nov,Student,29,November
+811,2013,Nov,Student,38,November
+284,2009,Nov,Vacation,2,November
+416,2010,Nov,Vacation,3,November
+548,2011,Nov,Vacation,10,November
+680,2012,Nov,Vacation,26,November
+812,2013,Nov,Vacation,53,November
+929,2014,Nov,Vacation,111,November
+1038,2015,Nov,Vacation,166,November
+1146,2016,Nov,Vacation,218,November
+1254,2017,Nov,Vacation,268,November
+1362,2018,Nov,Vacation,215,November
+42,2007,Nov,Wedding,4,November
+161,2008,Nov,Wedding,5,November
+285,2009,Nov,Wedding,19,November
+417,2010,Nov,Wedding,35,November
+549,2011,Nov,Wedding,56,November
+681,2012,Nov,Wedding,86,November
+813,2013,Nov,Wedding,58,November
+9,2007,Dec,Business,6,December
+79,2008,Dec,Business,10,December
+200,2009,Dec,Business,10,December
+330,2010,Dec,Business,21,December
+462,2011,Dec,Business,56,December
+594,2012,Dec,Business,59,December
+726,2013,Dec,Business,120,December
+855,2014,Dec,Business,110,December
+966,2015,Dec,Business,452,December
+1075,2016,Dec,Business,487,December
+1183,2017,Dec,Business,515,December
+1291,2018,Dec,Business,211,December
+10,2007,Dec,Car,21,December
+80,2008,Dec,Car,41,December
+201,2009,Dec,Car,65,December
+331,2010,Dec,Car,177,December
+463,2011,Dec,Car,442,December
+595,2012,Dec,Car,997,December
+727,2013,Dec,Car,2924,December
+856,2014,Dec,Car,2339,December
+967,2015,Dec,Car,10743,December
+1076,2016,Dec,Car,7029,December
+1184,2017,Dec,Car,8101,December
+1292,2018,Dec,Car,9227,December
+11,2007,Dec,Debt/Credit Issues,34,December
+81,2008,Dec,Debt/Credit Issues,70,December
+202,2009,Dec,Debt/Credit Issues,171,December
+332,2010,Dec,Debt/Credit Issues,368,December
+464,2011,Dec,Debt/Credit Issues,926,December
+596,2012,Dec,Debt/Credit Issues,2840,December
+728,2013,Dec,Debt/Credit Issues,6880,December
+857,2014,Dec,Debt/Credit Issues,5659,December
+968,2015,Dec,Debt/Credit Issues,23520,December
+1077,2016,Dec,Debt/Credit Issues,19147,December
+1185,2017,Dec,Debt/Credit Issues,17913,December
+1293,2018,Dec,Debt/Credit Issues,18487,December
+12,2007,Dec,Home,9,December
+82,2008,Dec,Home,11,December
+203,2009,Dec,Home,34,December
+333,2010,Dec,Home,70,December
+465,2011,Dec,Home,85,December
+597,2012,Dec,Home,275,December
+729,2013,Dec,Home,636,December
+858,2014,Dec,Home,575,December
+969,2015,Dec,Home,2581,December
+1078,2016,Dec,Home,2429,December
+1186,2017,Dec,Home,2717,December
+1294,2018,Dec,Home,2085,December
+13,2007,Dec,Major Purchase,3,December
+83,2008,Dec,Major Purchase,8,December
+204,2009,Dec,Major Purchase,1,December
+334,2010,Dec,Major Purchase,18,December
+466,2011,Dec,Major Purchase,19,December
+598,2012,Dec,Major Purchase,43,December
+730,2013,Dec,Major Purchase,119,December
+859,2014,Dec,Major Purchase,224,December
+970,2015,Dec,Major Purchase,867,December
+1079,2016,Dec,Major Purchase,839,December
+1187,2017,Dec,Major Purchase,1126,December
+1295,2018,Dec,Major Purchase,598,December
+14,2007,Dec,Medical,4,December
+84,2008,Dec,Medical,1,December
+205,2009,Dec,Medical,4,December
+335,2010,Dec,Medical,27,December
+467,2011,Dec,Medical,25,December
+599,2012,Dec,Medical,43,December
+731,2013,Dec,Medical,134,December
+860,2014,Dec,Medical,115,December
+971,2015,Dec,Medical,471,December
+1080,2016,Dec,Medical,449,December
+1188,2017,Dec,Medical,566,December
+1296,2018,Dec,Medical,378,December
+15,2007,Dec,Moving,3,December
+85,2008,Dec,Moving,3,December
+206,2009,Dec,Moving,3,December
+336,2010,Dec,Moving,5,December
+468,2011,Dec,Moving,19,December
+600,2012,Dec,Moving,38,December
+732,2013,Dec,Moving,69,December
+861,2014,Dec,Moving,70,December
+972,2015,Dec,Moving,236,December
+1081,2016,Dec,Moving,246,December
+1189,2017,Dec,Moving,266,December
+1297,2018,Dec,Moving,185,December
+16,2007,Dec,Other,72,December
+86,2008,Dec,Other,89,December
+207,2009,Dec,Other,245,December
+337,2010,Dec,Other,487,December
+469,2011,Dec,Other,521,December
+601,2012,Dec,Other,1310,December
+733,2013,Dec,Other,2876,December
+862,2014,Dec,Other,572,December
+973,2015,Dec,Other,2301,December
+1082,2016,Dec,Other,2474,December
+1190,2017,Dec,Other,3395,December
+1298,2018,Dec,Other,1929,December
+17,2007,Dec,Student,5,December
+87,2008,Dec,Student,6,December
+208,2009,Dec,Student,21,December
+338,2010,Dec,Student,4,December
+470,2011,Dec,Student,2,December
+602,2012,Dec,Student,14,December
+734,2013,Dec,Student,46,December
+209,2009,Dec,Vacation,2,December
+339,2010,Dec,Vacation,16,December
+471,2011,Dec,Vacation,12,December
+603,2012,Dec,Vacation,18,December
+735,2013,Dec,Vacation,55,December
+863,2014,Dec,Vacation,58,December
+974,2015,Dec,Vacation,224,December
+1083,2016,Dec,Vacation,317,December
+1191,2017,Dec,Vacation,286,December
+1299,2018,Dec,Vacation,249,December
+18,2007,Dec,Wedding,5,December
+88,2008,Dec,Wedding,6,December
+210,2009,Dec,Wedding,15,December
+340,2010,Dec,Wedding,46,December
+472,2011,Dec,Wedding,26,December
+604,2012,Dec,Wedding,61,December
+736,2013,Dec,Wedding,64,December
