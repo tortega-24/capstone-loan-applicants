@@ -21,17 +21,23 @@ jupyter: python3
 
 ![Photo downloaded from Unsplash: Credits - Tierra Mallorca](loanphoto.jpg)
 
-LendingClub is one of many financial services companies located in the United States. LendingClub's personal loan service has received millions of applications since 2007. Out of those millions, a fraction of those applications are accepted. As a college student transitioning from a dependent to an independent in the United States, there is little doubt in my mind that I will be applying for a loan in the near future. Since I will be applying for loans, understanding how to maximize my odds of approval is important to me. Fortunately, some financial service companies have released information about the people that have applied for loans. Through a Kaggle dataset @geor19, I was able to track loan applicants that applied for loans through LendingClub.
+LendingClub is one of many financial service companies located in the United States. Their personal loan service has received millions of applications since 2007. Out of those millions, a fraction of those applications are accepted. As a college student transitioning from a dependent to an independent in the United States, there is little doubt in my mind that I will be applying for a loan in the near future. Since I will be applying for loans, I want to understand how to maximize my odds of approval. Fortunately, some financial service companies have released information about the people that have applied for loans. Through a Kaggle dataset @geor19, I was able to track loan applicants that applied for loans through LendingClub.
 
 :::{.callout-note}
 You can find the link to my full code and documentation here: [GitHub Repository](https://github.com/tortega-24/capstone-loan-applicants/tree/main)
 :::
 
-The data spans 11 years, from 2007 to 2018, and contains two tables: a rejected and an accepted loan applicant table. The accepted applicant table contains approximately 2 million rows and lists over 150 features. The rejected applicant table extends out to about 27 million rows, and has exactly 9 features. To understand all of the different features, a separate Kaggle resource was used that identifies the columns that appear in the dataset @chan18. Many variables were based on financial concepts or were related to the applicant following their acceptance.
+The data spans 11 years, from 2007 to 2018, and contains two tables: a rejected and an accepted loan applicant table. The accepted applicant table contains approximately 2 million rows and lists over 150 features. The rejected applicant table extends out to about 27 million rows, and has exactly 9 features. To understand all of the different features, a separate Kaggle resource was used that identifies the columns that appear in the dataset @chan18. Many variables are based on financial concepts or related to the applicant following their acceptance.
 
 ## Goals and Introduction to Features
 
- My goal for the analysis was to focus on features that were easily understandable, and were characteristics of the customer. By the end of my analysis, I wanted to describe loan applicants and build a model using some of the features. I defined seven different questions that tackled unique aspects of the data. The table of contents describes each question I address.
+ My goal for the analysis was to focus on features that were easily understandable and were characteristics of the customer. I wanted to describe loan applicants and build a model using some of the features. I defined seven different questions that tackled unique aspects of the data. The table of contents describes each question I address. Here is a list of some of the features I plan to use:
+
+ ZIP Code, FICO Score, Debt-to-Income Ratio, Employment Length, Reason for Loan, Homeowner Status, Hardship Status, and Interest Rate.
+
+ :::{.callout-note}
+The list of features above is not complete.
+:::
 
 **Imports for Project**
 
@@ -61,7 +67,7 @@ from sklearn import preprocessing
 
 ## Preprocessing the Data
 
-Before answering the above questions, the data needed to be shaped and organized. A mix of cleaning techniques were used to break the raw csv files into distinct tables: a ZIP Code table, a model table, and an accepted applicant table.
+Before answering the questions, the data needed to be shaped and organized. A mix of cleaning techniques were used to break the raw csv files into distinct tables: a ZIP Code table, a model table, and an accepted applicant table. The first step is to import the files as dataframes.
 
 :::{.callout-important}
 Not every piece of processing code will be displayed. Visit the repository for the complete code.
@@ -88,7 +94,7 @@ The two files being imported from the Kaggle dataset are large in size and could
 
 ### ZIP Codes Table
 
-The first step is to import the files as dataframes. Next, I start processing a csv for ZIP Codes. Both raw tables contain applicants' first three digits of their ZIP Code. A new dataset will combine both ZIP Code columns and an applicant result column. A few missing values in the data will be dropped.
+ Next, I start processing a csv for ZIP Codes. Both raw tables contain applicants' first three digits of their ZIP Code. A new dataset will combine both ZIP Code columns and an applicant result column. A few missing values in the data will be dropped.
 
 ```{python}
 #| output: false
@@ -127,7 +133,7 @@ trimmed_accepted.shape
 
 ```
 
-After looking over the columns, I selected columns that would be most related to the questions I planned to answer. Then, after selecting my features, I took the percentage of values I would have left if I decided to drop their NA rows. With a remaining 91%, I decided it would be acceptable to drop the missing values instead of attempting to replace them. Lastly, I changed the type of the FICO score columns and the policy code to integers. The final table consisted of 17 features.
+After looking over the columns, I selected variables that would be most related to the questions I planned to answer. Then, after selecting my features, I took the percentage of values I would have left if I decided to drop their NA rows. With a remaining 91%, I decided it would be acceptable to drop the missing values instead of attempting to replace them. Lastly, I changed the type of the FICO Score columns and the policy code to integers. The final table consisted of 17 features.
 
 ```{python}
 #| output: false
@@ -164,11 +170,11 @@ trimmed_rejected['Debt-To-Income Ratio'] = trimmed_rejected['Debt-To-Income Rati
 
 ```
 
-Next, I used the sample method to take 100000 rows from each table and concatenated them to form a new table. Finally, all three tables were written as csv files.
+Next, I used the sample method to take 100,000 rows from each table and concatenated them to form a new table. Finally, all three tables were written as csv files.
 
-# Is employment length Significant?
+# Is employment length significant?
 
-To analyze the employment length, a grouped bar chart comparing loan applicants was made. This was taken using the model data that randomly sampled both candidates.
+To analyze the employment length, a grouped bar chart comparing loan applicants was made. This was taken using the model data that randomly sampled both loan applications.
 
 ```{python}
 #| label: fig-employment
@@ -350,9 +356,9 @@ plt.show()
 
 The interesting thing that stands out is the large, scary space outlining the state of Iowa. As of the dates collected from the Kaggle dataset, Iowa did not allow their citizens to apply for loans with LendingClub. This is the most likely explanation for the abysmal acceptance rate. Besides Iowa's low rate, no other group of ZIP Codes stand out.
 
-# How does Debt-to-Income and FICO Score change based on hardship flag, home ownership, and application type?
+# How does debt-to-income and FICO Score change based on hardship flag, home ownership, and application type?
 
-Loan applicants that are approved for loans must have differences between each other–right? To take a further look, I describe applicants by their homeowner status, whether they filed jointly or not, and if they have had to reduce their payment plans in the past (hardhip flag). Those features will order applicants based on median FICO scores and debt-to-income (DTI) ratios.
+Loan applicants that are approved for loans must have differences between each other–right? To take a further look, I describe applicants by their homeowner status, whether they filed jointly or not, and if they have had to reduce their payment plans in the past (hardhip flag). Those features will be ordered based on median FICO scores and debt-to-income (DTI) ratios.
 
 ```{python}
 #| label: fig-fico
@@ -386,9 +392,9 @@ sorted_df.rename(columns={"home_ownership": "Ownership", "application_type": "Ap
 sorted_df
 ```
 
-For the top three FICO scores @fig-fico, candidates either owned or mortgaged a home. All of the top three filed jointly. The top three lowest dti scores @fig-dti had applicants that rented or owned, filed either individually or jointly, and did or did not have a hardship flag. The group that owned a house, filed jointly, and enrolled in a harship plan had the highest FICO Score and DTI.
+For the top three FICO scores @fig-fico, candidates either owned or mortgaged a home. All of the top three filed jointly. The top three lowest dti scores @fig-dti had applicants that rented or owned, filed either individually or jointly, and did or did not have a hardship flag. The group that owned a house, filed jointly, and enrolled in a hardship plan had the highest FICO Score and DTI.
 
-# Does FICO Score change the interest rate they receive?
+# Does FICO Score change the interest rate?
 
 Let's say you have been approved for a loan. Now, the problem is the interest rate. This will effect how much your monthly payments will be. Using the accepted loan applications, I can find the interest rates people received. Since FICO scores seem to be a widely used metric, I grouped applicants by their FICO score.
 
@@ -425,7 +431,7 @@ Based on the data from 2018, it appears that a better FICO Score will result in 
 
 ![Different LendingClub Loan Interest Rates by Month and Year](fico_example.gif)
 
-It seems like I will need to build my FICO Score to get the best interest rate.
+It seems like I will need to build my FICO Score to get best interest rates.
 
 # Is there a bound using DTI?
 
@@ -449,11 +455,15 @@ ax.bar_label(bars[1], padding=10, color='black', fontsize=12)
 plt.show()
 ```
 
-For DTI ranging to about 40%, the distribution between accepted and rejected applications is fairly split @fig-hist. Beyond 40% DTI, the proportions of accepted applications decreases. There are accepted candidates with DTI ratios spanning from 0-100%.
+For DTI ranging to about 40%, the distribution between accepted and rejected applications is fairly split @fig-hist. Beyond 40% DTI, the proportions of accepted applications decreases. Although, there are accepted candidates with DTI ratios spanning from 0-100%.
 
 # Can the data effectively predict whether a candidate will be accepted or rejected?
 
 Three classification models, k-Nearest Neighbors, Decision Tree, and Logistic Regression can all predict an application's outcome. I can combine all three models together into an ensemble model where the three models will vote on an application's result.
+
+:::{.callout-note}
+Based on research, I am using the square root of the training data's length for k.
+:::
 
 ![Model Diagram](ModelChart.png)
 
@@ -477,7 +487,7 @@ ensemble_hard = algorithm_ens.predict(pred_std_test)
 
 ## Model Equations
 
-To test the model's effectiveness, three metrics will be used. Precision, recall, and accuracy. Precision measures the accuracy of positive predictions, recall measures the accuracy of relevant results correctly classified. Accuracy is all correctly identified over the total.
+To test the model's effectiveness, three metrics will be used. Precision, recall, and accuracy. Precision measures the accuracy of positive predictions, and recall measures the accuracy of relevant results correctly classified. Accuracy is all correctly identified over the total.
 
 $$Precision = TP/(TP+FP)$$
 
@@ -527,10 +537,10 @@ $$Accuracy = 90.62 $$
 
 ![Decision Tree's Top Three Important Values](importance.png)
 
-Overall, the results of the model were great! Using the feature importance from the decision tree model, we can observe that employment length played a large role. Precision, recall, and accuracy all measured in the 90s. One of my fears was that ZIP Code would play a role in deciding applications. However, it appears that financial factors take more precedence.
+Overall, the results of the model were promising! Using the feature importance from the decision tree model, we can observe that employment length played a large role. Precision, recall, and accuracy all measured in the 90s. One of my fears was that ZIP Code would play a role in deciding applications. However, it appears that financial factors take more precedence.
 
 # Conclusions
 
-Understanding what qualities lenders desire is important. For LendingClub, many accepted applications contain people with employment length greater than 1 year. Accepted applications also contained low DTI percentages and high FICO Scores. Building a model using matching features resulted in high metric scores. As someone that will be applying for loans, it is nice to understand what kind applicants lenders are looking for.
+Understanding what qualities lenders look at is important. For LendingClub, many accepted applications contain people with employment length greater than 1 year. Accepted applications also contained low DTI percentages and high FICO Scores. Building a model using matching features resulted in high metric scores and reflected an importance of financial factors. As someone that will be applying for loans, it is nice to understand what measures lenders are looking for.
 
 ## References
