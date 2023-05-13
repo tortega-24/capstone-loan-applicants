@@ -11,11 +11,17 @@
 Here is some information describing what each question attempts to solve:
 
 Question 1: Is employment length related to the acceptance of loans
+
 Question 2: Are different loans accepted during different months?
+
 Question 3: What is the ratio of accepted applications across the U.S.?
+
 Question 4: How are accepted application's FICO Score and DTI different based on hardship, applicant type, and homeowner features?
+
 Question 5: Does an application's FICO Score change the interest rate received?
+
 Question 6: Is there a bound on DTI between accepted and rejected applications?
+
 Question 7: Can both tables be used to predict a customer's acceptance effectively? What are the most important features?
 
 
