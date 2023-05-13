@@ -7,7 +7,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;Once the data was extracted from the zip file, each table was loaded into a Jupyter Notebook file to due some general pre-processing. This includes the selection of columns, handling missing values, and the matching of columns from both loan applicant tables. For a detailed look at the columns, please see the project proposal. At the end of the pre-processing steps, three tables were built: a table mixing 100,000 rows of accepted and rejected applicants, one table containing accepted applicant data, and another table containing ZIP Code data for all applicants.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Seven questions were proposed based on looking through the data. These questions were answered with a mix of graphical and tabular results. To solve some of these questions, outside resources were required to provide data and background knowledge. A great example of this is the use of U.S. Census geospatial data [4]. The geospatial data was used with loan applicant's ZIP Code data to build a map showing the ratio of accepted loan applicants across mainland states. Another resource comes from Experian and describes the range of FICO and Vantage scores [5]. The 'hardship' column was defined using a website by Credit Karma [6].
-  
+
+Here is some information describing what each question attempts to solve:
+
+Question 1: Is employment length related to the acceptance of loans
+Question 2: Are different loans accepted during different months?
+Question 3: What is the ratio of accepted applications across the U.S.?
+Question 4: How are accepted application's FICO Score and DTI different based on hardship, applicant type, and homeowner features?
+Question 5: Does an application's FICO Score change the interest rate received?
+Question 6: Is there a bound on DTI between accepted and rejected applications?
+Question 7: Can both tables be used to predict a customer's acceptance effectively? What are the most important features?
 
 
 ### Resources
